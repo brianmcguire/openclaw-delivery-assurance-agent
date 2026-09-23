@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+if [ -x "$ROOT/.local/node/node_modules/node/bin/node" ]; then
+  export PATH="$ROOT/.local/node/node_modules/node/bin:$PATH"
+fi
+export OPENCLAW_STATE_DIR="$ROOT/.local/delivery-openclaw"
+export OPENCLAW_CONFIG_PATH="$OPENCLAW_STATE_DIR/openclaw.json"
+if [ -x "$ROOT/.local/runtime/node_modules/.bin/openclaw" ]; then
+  exec "$ROOT/.local/runtime/node_modules/.bin/openclaw" "$@"
+fi
+exec openclaw "$@"

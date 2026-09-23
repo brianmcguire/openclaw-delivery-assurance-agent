@@ -1,0 +1,56 @@
+# Verification report
+
+Verified September 22, 2026 Eastern time (September 23 UTC). This report separates automated tests, actual runtime execution, and the still-pending two-person pilot.
+
+## Actual environment and isolation
+
+Development used macOS, checkout-local Node 24.16.0 and OpenClaw 2026.9.5, the official Codex plugin, and an existing configured ChatGPT/Codex provider route. The original global OpenClaw 2026.4.14 installation and production remote gateway configuration were preserved. The delivery gateway uses a separate state directory, workspace, database, and loopback port 19789. The existing private delivery prototype repository was left untouched; its source was not copied into this public project.
+
+The live access path is OpenClaw Control UI through Tailscale Serve. No Slack, Telegram, email, or customer channel was configured. Gateway health returned `ok: true`, no plugin errors, and the intended delivery agent. Current config validation passed. A fresh provider-neutral configuration also passed validation, and a repeat setup refused to overwrite it. Other model providers were not exercised end to end.
+
+## Live OpenClaw workflow: passed with one identity
+
+The coding agent drove the real browser UI using one existing authenticated profile. This was an automated UI smoke test, **not a two-human multiplayer demonstration**. The fictional `local-smoke` project assigned all three milestones to that one contributor to make this limitation explicit.
+
+1. `DELIVERY WHOAMI` returned a verified gateway profile.
+2. Project creation persisted the project and generated three named milestone update questions.
+3. The free-form missing-access update was captured and attributed to that profile. The agent flagged the blocker and target after baseline, reported amber, and asked for a recovery action and ISO date.
+4. The recovery reply recorded the action and date and answered the open recovery question. The blocker remained open and the agent did not repeat the question.
+5. The founder brief showed the approval decision, supporting source IDs, recovery plan, unknown milestone data, and unavailable budget/effort variance.
+6. A target-date correction changed revision 3 to 4. The subsequent brief resolved the threatened-date concern while retaining the blocker and unapproved decision.
+7. Direct read-only ledger checks confirmed the original September 25 statement remained stored, the target now reads September 24, recovery remains recorded, and every source used that same verified runtime profile.
+
+One extraction attempt was rejected by source validation during the recovery turn; the model corrected the extraction and completed the turn. Early development sessions also exposed a native Codex policy-handoff issue after tool configuration reloads. Fresh sessions with stable configuration completed the workflow. Neither error is hidden as a successful first attempt.
+
+## Scheduled check-in: passed
+
+The weekly helper registered an OpenClaw cron job for the exact shared session. A manually triggered execution of that job finished successfully, used the live model and delivery tools, and appeared in the shared Control UI conversation. It reported the corrected target, unresolved blocker, recovery commitment, pending founder decision, and missing updates without generating a duplicate recovery question. External delivery was `not-requested`.
+
+The smoke-test job was disabled afterward. The seven-day wall-clock trigger has not been observed; registration and execution through the actual scheduler were verified. No recurring test traffic remains enabled by this project.
+
+## Automated checks: passed
+
+```bash
+PATH="$PWD/.local/node/node_modules/node/bin:$PATH" npm test
+python3 vendor/agent-index-client/agent_index_client.py --self-check
+bash -n scripts/install.sh scripts/openclaw scripts/weekly-checkin.sh scripts/report-usage.sh
+scripts/openclaw config validate
+python3 scripts/agent-index.py --preview
+```
+
+- 12 Node tests: source evidence, runtime attribution, durable reopen, recovery and duplicate suppression, corrections and stale revisions, conflicting reports, date/baseline risks, missing owner, escalation, per-requester brief changes, prompt-injection admission boundaries, actual usage counters, and exact session/run profile lookup.
+- 2 Python tests: installation-scoped counter collection and failure handling.
+- Official upstream client self-check passed.
+- Shell syntax and isolated OpenClaw configuration passed.
+- Offline usage preview read actual completed OpenClaw run counters. It made no registration or reporting request.
+
+The two-identity store test uses fixtures. It verifies attribution logic, not the presence of two humans. Test stores are temporary and excluded from usage reporting.
+
+## Still unverified / external acceptance gates
+
+- A second real person authenticating and completing the seven-step workflow with the founder.
+- Agent Index registration, successful live reporting, organizer verification, and leaderboard visibility. Required Plow credentials were not available.
+- A recorded 60+ second video. The exact two-person recording sequence is prepared in `submission/demo-script.md`.
+- Fresh-machine package installation and live execution on Linux or another model provider. Fresh configuration generation and validation were tested locally.
+
+The Control UI profile adapter is pinned to the 2026.9.5 host transcript schema. Recheck attribution after runtime upgrades. This installation is one trusted team, not a multi-tenant security boundary. Questions appear in the shared conversation; private notifications and customer messages are not implemented.

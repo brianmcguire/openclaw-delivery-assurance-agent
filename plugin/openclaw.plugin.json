@@ -1,0 +1,25 @@
+{
+  "id": "delivery-assurance-agent",
+  "name": "Delivery Assurance Agent",
+  "description": "Evidence-based project health and owner follow-up for trusted startup teams.",
+  "categories": ["other"],
+  "contracts": {
+    "tools": [
+      "delivery_record",
+      "delivery_update",
+      "delivery_brief",
+      "delivery_checkin"
+    ]
+  },
+  "activation": { "onStartup": true },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "dataDir": { "type": "string" },
+      "agentId": { "type": "string", "default": "delivery-assurance-agent" },
+      "allowUnverifiedLocal": { "type": "boolean", "default": false }
+    },
+    "required": ["dataDir"]
+  }
+}

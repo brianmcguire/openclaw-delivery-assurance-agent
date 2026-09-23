@@ -1,0 +1,8 @@
+{
+  "project": "harbor-pilot",
+  "milestone": "data-access",
+  "field": "targetDate",
+  "value": "2026-09-24",
+  "reason": "FICTIONAL SAMPLE: I typed the wrong target date. The correct target is 2026-09-24.",
+  "expectedRevision": 3
+}

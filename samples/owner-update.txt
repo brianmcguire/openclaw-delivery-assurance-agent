@@ -1,0 +1,2 @@
+DELIVERY UPDATE harbor-pilot data-access
+FICTIONAL SAMPLE. I completed the field mapping. Next step is loading the test data. I am blocked because the sandbox access has not arrived. My target is 2026-09-25. I need the founder to approve using a synthetic dataset if access is still missing tomorrow.

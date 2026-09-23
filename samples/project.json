@@ -1,0 +1,41 @@
+{
+  "id": "harbor-pilot",
+  "name": "Harbor pilot — fictional sample",
+  "customerAlias": "SAMPLE-CUSTOMER",
+  "outcome": "Demonstrate a working appointment reminder workflow with fictional test data",
+  "deliveryDate": "2026-09-28",
+  "sample": true,
+  "owners": [
+    { "id": "founder", "name": "Founder" },
+    { "id": "pilot-lead", "name": "Pilot lead" }
+  ],
+  "milestones": [
+    {
+      "id": "data-access",
+      "name": "Test data access",
+      "owner": "pilot-lead",
+      "dueDate": "2026-09-24"
+    },
+    {
+      "id": "workflow",
+      "name": "Reminder workflow ready",
+      "owner": "pilot-lead",
+      "dueDate": "2026-09-26"
+    },
+    {
+      "id": "acceptance",
+      "name": "Founder acceptance review",
+      "owner": "founder",
+      "dueDate": "2026-09-28"
+    }
+  ],
+  "baseline": {},
+  "cadenceDays": 7,
+  "escalationContact": "founder",
+  "thresholds": {
+    "dueSoonDays": 3,
+    "unansweredDays": 2,
+    "rollovers": 2,
+    "variancePercent": 15
+  }
+}

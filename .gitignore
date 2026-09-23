@@ -1,0 +1,10 @@
+.local/
+.env
+.env.*
+!.env.example
+node_modules/
+*.sqlite*
+*.db*
+*.log
+__pycache__/
+.DS_Store

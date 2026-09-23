@@ -1,0 +1,15 @@
+# Data, identity, and permissions
+
+Use aliases and test data in the public demo. Do not submit customer secrets, patient records, access tokens, or internal documents. The configured model provider processes the text you send to it under your account's policies.
+
+Private state is under `.local/`, excluded from Git. The delivery database and source records are local to this checkout by default. OpenClaw also retains its own conversation history in the isolated state directory. Deleting a ledger record alone would not delete those transcripts. No automatic retention purge is implemented; back up and retire both stores according to your team's policy.
+
+The runtime stamps attribution. For channel input it uses the trusted sender field. For the shared Control UI it reads the qualified profile identity on the host's exact current message. OpenClaw 2026.9.5 does not expose that profile in the public tool context, so a pinned compatibility adapter reads only the current agent's `openclaw-agent.sqlite`, current session, and current run's idempotency key, in read-only mode. It never infers identity from session ownership. Missing metadata or a changed host schema fails closed for writes; rerun the attribution check before upgrading OpenClaw. User-written names and display labels are not trusted identity. Alias joining is a workflow convenience inside a trusted team: the first authenticated person can claim an unbound alias. It is not a substitute for authenticating and admitting the right person to the gateway.
+
+Session owner icons, Shared/Draft controls, and sidebar filters are not security boundaries. Anyone who can operate this agent shares the agent's capabilities and data. Use a dedicated OS account/container or separate host when another trust boundary is necessary. Reusing a native Codex login is an explicit local convenience; the host operator remains trusted. Public installation can use any configured OpenClaw provider instead.
+
+The agent's configured tool allowlist contains only four delivery tools. It has no shell, file, browser, external messaging, or project-system write tool. It can draft outreach in the conversation. Sending to a customer, changing a project system, or making a commitment is not implemented. A future integration must obtain explicit approval for recipient, content, and effect.
+
+The source validator rejects invented spans, dates not present in the update, and unsupported numeric evidence. Status classification and interpretation still require judgment and can be wrong. Corrections are part of the workflow. Instructions inside updates do not authorize project creation, corrections, enrollment, decisions, or external effects.
+
+Usage reporting uses the unmodified Apache-2.0 official client with a narrow custom collector. It reads only this installation's delivery usage table. It never invokes agentsview across your machine, fabricates Hermes records, or counts unit-test fixture counters. Installation IDs and report keys live under a separate private directory. Review the upstream client's registration payload before publishing; listing text and video links are public.
