@@ -52,6 +52,8 @@ The gateway binds to loopback port 19789. Set `DELIVERY_PORT` before initial set
 
 `--reuse-codex-login` uses OpenClaw's documented `appServer.homeScope: "user"` opt-in. It does not import secrets into Git. The team shares that model route inside one trusted installation. A separate OpenClaw provider login is preferable when the host's native Codex work must be independent. The OpenAI runtime requires the official `@openclaw/codex` plugin; the installer installs it through OpenClaw so its trust record is valid. Copying its directory alone is insufficient.
 
+For a local model, use an `ollama/MODEL` reference and follow the current [OpenClaw Ollama setup](https://docs.openclaw.ai/providers/ollama/setup) and [provider configuration](https://docs.openclaw.ai/providers/ollama/configuration) in this isolated profile. Use `scripts/openclaw` wherever those instructions say `openclaw`. Local Ollama uses its native endpoint without `/v1`; choose a model that supports tool calls. This route is documented but was not live-tested here.
+
 See [.env.example](.env.example) for supported variables. It is documentation, not a credentials file loaded by the agent.
 
 ## Multiplayer quick start
