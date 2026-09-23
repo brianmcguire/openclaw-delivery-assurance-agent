@@ -9,7 +9,7 @@ Rules checked against the [official event](https://luma.com/zhkhsnpa), [Agent In
 | OpenClaw 2.0 | Pinned OpenClaw 2026.9.5; actual Control UI/tool verification described in `docs/verification.md`. |
 | Multiplayer and other people interact | Identity-bearing shared UI supported; real second-person run still required. Follow `demo-script.md`. |
 | Real startup role | Delivery lead for customer pilots/projects; owner collection, recovery, escalation and founder decisions. |
-| Public open-source MIT repository | MIT code and installable package prepared; repository URL tracked in `links.json`. Upstream client retains Apache-2.0 notices. |
+| Public open-source MIT repository | Published at [openclaw-delivery-assurance-agent](https://github.com/brianmcguire/openclaw-delivery-assurance-agent); GitHub recognizes MIT. Upstream client retains Apache-2.0 notices. |
 | Agent Index listing | Account credential and registration pending; exact command in `docs/agent-index.md`. |
 | Required client reports genuine usage | Unmodified pinned client integrated with documented custom runtime collector. Offline tests/preview do not establish server acceptance. Perform and verify live report. |
 | 60+ second real demo video | 80–90 second shot list prepared. Two people must record real interactions and upload the actual video. |

@@ -54,3 +54,7 @@ The two-identity store test uses fixtures. It verifies attribution logic, not th
 - Fresh-machine package installation and live execution on Linux or another model provider. Fresh configuration generation and validation were tested locally.
 
 The Control UI profile adapter is pinned to the 2026.9.5 host transcript schema. Recheck attribution after runtime upgrades. This installation is one trusted team, not a multi-tenant security boundary. Questions appear in the shared conversation; private notifications and customer messages are not implemented.
+
+## Public package review
+
+Published under MIT at [openclaw-delivery-assurance-agent](https://github.com/brianmcguire/openclaw-delivery-assurance-agent). The 48-file staged package was checked for credentials, private host identifiers, local paths, private project material, and accidentally included state/database files; no matches were found. Authored local documentation links resolved. The vendored official client hash matched its recorded upstream SHA-256. Private state, transcripts, and usage credentials are excluded by `.gitignore`. The upstream license's original trailing blank line is preserved.
