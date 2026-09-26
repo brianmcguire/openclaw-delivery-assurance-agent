@@ -8,7 +8,8 @@
       "delivery_record",
       "delivery_update",
       "delivery_brief",
-      "delivery_checkin"
+      "delivery_checkin",
+      "delivery_setup_card"
     ]
   },
   "activation": { "onStartup": true },

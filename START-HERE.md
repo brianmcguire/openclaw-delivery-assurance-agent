@@ -10,6 +10,8 @@ After [installation](README.md#installation) and [identity-bearing multiplayer s
 DELIVERY START
 ```
 
+For fields and multiple-choice controls, send **`DELIVERY FORM`** or ask “Show the project setup card.” It offers project details, owner/milestone inputs, cadence and baseline choices, and a review screen. In the browser, Create submits the reviewed command through your current identity. In native apps without a prompt bridge, copy the reviewed command into chat. No data is saved on Review; wait for the agent to confirm creation. Unsent form drafts are not shared or durable.
+
 The agent explains its role, checks the current contributor identity, and asks whether you want **Try a fictional example** or **Set up your project**. It asks focused questions rather than requiring you to write project JSON yourself. At the end it gives you an exact project envelope to send. A draft is not saved until you send that envelope.
 
 For the hackathon pilot, choose the fictional example. Its milestone dates are generated relative to the current UTC date. If a sample with the same ID already exists, resume it or choose a new ID. A solo rehearsal is available, but it is not proof of multiplayer.

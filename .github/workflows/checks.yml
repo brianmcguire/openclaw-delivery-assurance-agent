@@ -11,5 +11,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: npm ci
       - run: npm test
       - run: python3 vendor/agent-index-client/agent_index_client.py --self-check

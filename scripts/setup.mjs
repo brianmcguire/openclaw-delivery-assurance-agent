@@ -56,6 +56,8 @@ const config = {
       "delivery_update",
       "delivery_brief",
       "delivery_checkin",
+      "delivery_setup_card",
+      "show_widget",
     ],
     deny: [
       "exec",

@@ -126,9 +126,14 @@ Set optional `baseline.effortHours` or `baseline.budget` with `baseline.currency
 
 Use a separate checkout, gateway profile, and data directory per trust boundary. This agent does not provide customer-level tenant isolation. Read [privacy and permissions](docs/privacy.md) and [architecture](docs/architecture.md).
 
+## Project setup card
+
+Send `DELIVERY FORM` in the browser conversation for a four-step inline form: project, team/milestones, cadence/rules, review. Choose fictional or real data, a two-person workflow or solo rehearsal, and an optional effort/budget baseline. The reviewed Create action submits through the current chat identity; the host still validates the project. Native clients without the prompt bridge can copy the reviewed command. Unsent form drafts disappear on reload. Live iOS compatibility is not yet verified.
+
 ## Checks and usage reporting
 
 ```bash
+npm ci
 PATH="$PWD/.local/node/node_modules/node/bin:$PATH" npm test
 python3 vendor/agent-index-client/agent_index_client.py --self-check
 python3 scripts/agent-index.py --preview
