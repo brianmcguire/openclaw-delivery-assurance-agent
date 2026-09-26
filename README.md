@@ -138,7 +138,7 @@ Send `DELIVERY PARTICIPANTS <project-id>` to open the joining card. Choose Perso
 
 ## Plugin distribution
 
-The same source builds an installable local plugin archive with `npm run package`. It includes both cards, workspace instructions, skill, and MIT license, without Agent Index reporting assets. See [plugin installation](docs/plugin-install.md) and [the shared release plan](docs/release-plan.md). Registry publication and upstream acceptance remain separate steps.
+The same source builds an installable local plugin archive with `npm run package`. It includes both cards, workspace instructions, skill, and MIT license, without Agent Index reporting assets. See [plugin installation](docs/plugin-install.md), [registry publication](docs/plugin-publishing.md), and [the shared release plan](docs/release-plan.md). Registry publication and upstream acceptance remain separate steps.
 
 ## Checks and usage reporting
 
