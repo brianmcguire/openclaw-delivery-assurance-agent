@@ -150,6 +150,7 @@ The first two commands are offline checks. Preview reads genuine completed-run c
 - **Invalid update fields:** preserve exact spans, use ISO dates, and state units. Missing information remains unknown. Use the routing header if a plain reply could refer to multiple milestones.
 - **Stale correction:** read the current revision and retry deliberately. Do not repeatedly submit the old revision.
 - **Serve unavailable or occupied:** use the loopback UI for local setup, keep multiplayer pending, and fix the tailnet/HTTPS route. Do not use public Funnel as an identity workaround.
+- **Widget sandbox host unavailable:** expose the separate sandbox listener through a dedicated HTTPS origin and configure `mcp.apps.sandboxOrigin`; see [proxy sandbox setup](docs/multiplayer.md#inline-card-sandbox-behind-a-proxy). Keep that origin separate from authenticated content.
 - **Usage registration unavailable:** complete Plow sign-in or obtain the agent-scoped token. A missing collector or unreadable registration state is an error, not zero usage.
 
 ## Submission and license

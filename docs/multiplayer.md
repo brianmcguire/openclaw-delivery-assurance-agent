@@ -46,3 +46,13 @@ The exact session key may differ for a new conversation. The job is idempotently
 Tailscale is optional for installation but is the tested access path for this development environment. Another official identity-bearing reverse proxy or supported group channel can be used, with separate channel configuration and an attribution test. No Slack, Telegram, WhatsApp, email, or customer channel is bundled or silently configured.
 
 If a real second person is unavailable, run the local checks and one-identity smoke test, then record the two-person result as pending. Do not substitute fictional identities, unit-test actors, or one operator driving two accounts for the required live human demonstration.
+
+## Inline card sandbox behind a proxy
+
+The project setup card uses OpenClaw's dedicated sandbox listener (gateway port plus one by default). It must have a different origin from the authenticated Control UI. For an externally managed HTTPS route, choose a separate unused port and proxy **only** the sandbox listener there. Inspect existing Serve routes first. Example for an isolated gateway on 19889:
+
+```bash
+tailscale serve --bg --https=8445 http://127.0.0.1:19890
+```
+
+In that isolated profile set `mcp.apps.sandboxOrigin` to `https://YOUR-TAILNET-HOST:8445`, validate configuration, and reload the gateway. Do not proxy the authenticated gateway to this origin or host private content there. This route hosts the sandbox shell; project writes still go through the authenticated chat. Direct local access needs both listener ports. See [official sandbox origin guidance](https://docs.openclaw.ai/cli/mcp/apps).
