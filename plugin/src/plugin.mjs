@@ -3,6 +3,7 @@ import { assess, checkin } from "./assessment.mjs";
 import { brief } from "./brief.mjs";
 import { prepare, admit } from "./admission.mjs";
 import { currentProfile } from "./identity.mjs";
+import { onboarding } from "./onboarding.mjs";
 const names = [
   "delivery_record",
   "delivery_update",
@@ -129,6 +130,7 @@ export default {
                 pid = project || receipt.projectId || receipt.source?.project;
               return {
                 receipt,
+                ...(!pid ? { onboarding: onboarding(receipt.actor) } : {}),
                 ...(pid
                   ? { record: store.record(pid) }
                   : { projects: store.projects() }),

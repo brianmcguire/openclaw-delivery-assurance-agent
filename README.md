@@ -2,6 +2,8 @@
 
 A first delivery lead for startups and small agencies. It asks milestone owners for updates, records what they said, flags delivery concerns, follows up for a recovery action and date, and brings decisions to the founder.
 
+**New here? Read [Start here](START-HERE.md), then send `DELIVERY START` in the agent conversation.** The guided walkthrough explains the role, offers a fictional example or your own project, checks identity, drafts project setup, and helps a second real person join. It is one shared agent with multiple human contributors.
+
 It runs in a shared OpenClaw conversation with a small local SQLite store. No PMO, dashboard, project-management subscription, or fixed model provider is required. All included project data is fictional.
 
 The MVP includes project records, source-checked free-form updates, rule-based health, owner questions, correction history, founder decisions and briefs, and the official AI Worth Using client with an installation-scoped collector. See [verification](docs/verification.md) for the exact tested state and remaining hackathon acceptance items. Automated test identities are not a verified two-human demonstration.

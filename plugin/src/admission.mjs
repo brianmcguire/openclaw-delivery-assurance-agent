@@ -25,6 +25,7 @@ export function parseRequest(raw) {
   const check = /^DELIVERY CHECKIN ([a-z0-9-]+)\s*$/.exec(raw.trim());
   if (check) return { action: "CHECKIN", project: check[1] };
   if (raw.trim() === "DELIVERY WHOAMI") return { action: "WHOAMI" };
+  if (raw.trim() === "DELIVERY START") return { action: "START" };
   if (raw.trim().startsWith("DELIVERY "))
     throw Error(
       "Invalid DELIVERY header. See quick start for the supported commands.",
@@ -70,7 +71,7 @@ export function admit(store, a, context, allowLocal) {
   try {
     actor = a.profileActor || identity(context, a.context, allowLocal);
   } catch (e) {
-    if (request && !["CHECKIN", "WHOAMI"].includes(request.action)) throw e;
+    if (request && !["CHECKIN", "WHOAMI", "START"].includes(request.action)) throw e;
   }
   const provenance = {
     receipt: a.receipt,
@@ -117,6 +118,7 @@ export function admit(store, a, context, allowLocal) {
   )
     throw Error("Authenticated contributor identity is required");
   let result = { actor: actor || null };
+  if (request.action === "START") result.onboardingRequested = true;
   if (request.action === "WHOAMI")
     result.identity = actor || {
       verified: false,

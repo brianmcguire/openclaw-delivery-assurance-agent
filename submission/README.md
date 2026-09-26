@@ -12,6 +12,10 @@ Small teams often discover delivery trouble after a promised date has slipped. D
 
 Role: the first delivery lead, before the team needs a PMO. It keeps a customer pilot or implementation moving when the founder cannot chase every milestone. The design uses delivery-practice concepts—baselines, accountable owners, evidence, recovery plans, and escalation—without requiring enterprise project software. The public example is wholly fictional and works for software startups, agencies, and service businesses.
 
+## Start here
+
+Read [the guided walkthrough](../START-HERE.md). Send `DELIVERY START` in the running agent and choose the fictional example. It introduces the role, checks identity, drafts setup, and guides two real contributors through the delivery workflow.
+
 ## Install and use
 
 See [installation](../README.md#installation), [multiplayer setup](../docs/multiplayer.md), [architecture](../docs/architecture.md), and [privacy](../docs/privacy.md). A clone plus checkout-local OpenClaw, a configured model, and one trusted team's shared conversation are sufficient. Two distinct people must authenticate and contribute to establish the live multiplayer result.
