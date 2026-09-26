@@ -4,6 +4,10 @@ Verified September 22, 2026 Eastern time (September 23 UTC). This report separat
 
 ## September 25 readiness update
 
+### September 26 onboarding addition
+
+Published guided onboarding adds `DELIVERY START` and `START-HERE.md`. All 14 Node and 3 Python checks pass, including read-only admission without identity, date generation, sample-envelope creation, and rejection of same-founder owner enrollment. CI passed at `6b11a5a`. The isolated Mac mini gateway was reloaded and a genuine CLI START turn returned the role introduction, both setup paths, an accurate unverified-identity warning, and no claim that a project was saved. This verifies the live introduction only: the complete guided founder/owner conversation and two-human onboarding are still pending. Browser identity was subsequently reported working by the founder; that report is not a second-person test.
+
 An isolated second installation on a Mac mini uses OpenClaw 2026.9.5 and a separate loopback gateway. Its tailnet-only HTTPS route and gateway health responded successfully. That route was changed from shared-token access to Tailscale identity via OpenClaw trusted-proxy mode, with the existing owner's login allowlisted; config validation passed and the prior isolated config was backed up. Browser profile admission and a second real person's contribution remain unverified. The host's other gateway and Serve routes were not changed.
 
 The official Agent Index client was refreshed to upstream commit `edf196031803e204cdbcd81ce574e1f54fd75f65`. Its new machine-wide OpenClaw collector is disabled by this project's wrapper so only this installation's genuine delivery-agent usage ledger is reported. Offline checks pass; registration and a live report remain pending a supported Plow credential. No demo video has been recorded.
