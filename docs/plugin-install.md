@@ -26,6 +26,8 @@ Validate config and restart the isolated gateway. Configure authenticated multi-
 
 Send `DELIVERY START` or `DELIVERY FORM`, create the fictional project, then `DELIVERY PARTICIPANTS <project-id>`. Prepare the second person's joining instructions, admit their own identity separately, and confirm their WHOAMI and JOIN results. Ask for a brief after an owner update; request a correction draft to fix a fact while preserving evidence.
 
+The local archive installed and started in an isolated test profile. CLI plugin info still reports `provenance-invalid` for that local source; no registry trust or listing is claimed. Verify release provenance for the eventual registry package.
+
 No Agent Index account is required for plugin operation. Reporting is optional, explicitly configured by the hackathon operator outside this package. Multi-person live validation, registry publication, iOS behavior, and upstream maintainer acceptance are separate release checks.
 
 Source and full guidance: https://github.com/brianmcguire/openclaw-delivery-assurance-agent

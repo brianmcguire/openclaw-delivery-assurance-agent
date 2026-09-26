@@ -24,6 +24,8 @@ See [installation](../README.md#installation), [multiplayer setup](../docs/multi
 
 ## Submission assets
 
+- [Pilot runbook](pilot-runbook.md): exact interactions for the existing fictional project.
+- [OpenClaw proposal draft](openclaw-proposal.md): prepared for maintainer discussion; not submitted.
 - [Demo script and shot list](demo-script.md): exact 60–90 second two-person recording sequence.
 - [Usage evidence](usage-evidence.md): capture real attribution and successful reporting without private data.
 - [Requirement checklist](checklist.md): verified rules and acceptance status.

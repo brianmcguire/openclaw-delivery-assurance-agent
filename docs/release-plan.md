@@ -40,4 +40,4 @@ Official references, checked September 26, 2026:
 
 ## Current gaps
 
-The browser setup card has created a persistent fictional project under one verified founder identity. The two-person pilot, live iOS behavior, clean distribution-artifact installation, community package publication, Agent Index registration/reporting, video, and upstream proposal remain pending. See [verification](verification.md) for the detailed evidence.
+The browser setup card has created a persistent fictional project under one verified founder identity. The two-person pilot, live iOS behavior, a fresh end-to-end model workflow from the locally installed archive, community package publication, Agent Index registration/reporting, video, and upstream proposal remain pending. See [verification](verification.md) for the detailed evidence.
