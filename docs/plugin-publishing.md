@@ -21,10 +21,10 @@ clawhub package publish 'STAGE' --family code-plugin \
   --name '@OWNER/delivery-assurance-agent' --owner OWNER \
   --display-name 'Delivery Assurance Agent' \
   --source-repo brianmcguire/openclaw-delivery-assurance-agent \
-  --source-commit COMMIT --dry-run
+  --source-commit COMMIT --source-ref COMMIT --source-path . --dry-run
 ```
 
-The prepared stage combines `plugin/`, `workspace/`, and license/setup documentation. Do not specify `--source-path plugin`: that source folder alone lacks the bundled workspace and skill. A local inspector pass is not registry moderation or security approval.
+The prepared stage combines `plugin/`, `workspace/`, and license/setup documentation. Do not specify `--source-path plugin`: that source folder alone lacks the bundled workspace and skill. Use the source root `.` because this is a combined build from committed source folders; do not let the CLI infer the ignored `.local/releases/` directory as a public GitHub source path. A local inspector pass is not registry moderation or security approval.
 
 ## Account and publication
 
