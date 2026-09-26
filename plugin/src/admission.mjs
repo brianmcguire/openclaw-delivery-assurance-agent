@@ -27,6 +27,8 @@ export function parseRequest(raw) {
   if (raw.trim() === "DELIVERY WHOAMI") return { action: "WHOAMI" };
   if (raw.trim() === "DELIVERY START") return { action: "START" };
   if (raw.trim() === "DELIVERY FORM") return { action: "START" };
+  const participants = /^DELIVERY PARTICIPANTS ([a-z0-9-]+)\s*$/.exec(raw.trim());
+  if (participants) return { action: "START", project: participants[1] };
   if (raw.trim().startsWith("DELIVERY "))
     throw Error(
       "Invalid DELIVERY header. See quick start for the supported commands.",

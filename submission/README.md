@@ -2,6 +2,8 @@
 
 **Delivery Assurance Agent** — a first delivery lead for a startup or small agency.
 
+The hackathon entry and OpenClaw plugin distribution use the same codebase and release. See [the shared release plan](../docs/release-plan.md); community publication and upstream acceptance have separate checks.
+
 **One-sentence pitch:** An OpenClaw delivery lead that asks owners what changed, follows up on blockers, and brings the founder a current, evidence-backed decision brief.
 
 ## Agent Index description

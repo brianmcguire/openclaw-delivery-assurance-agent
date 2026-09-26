@@ -57,6 +57,7 @@ const config = {
       "delivery_brief",
       "delivery_checkin",
       "delivery_setup_card",
+      "delivery_participant_card",
       "show_widget",
     ],
     deny: [

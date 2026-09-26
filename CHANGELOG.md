@@ -11,3 +11,10 @@ Adds `DELIVERY START` conversational onboarding, a role introduction and two set
 Initial hackathon MVP. Adds project setup, runtime-attributed owner enrollment, free-form milestone updates, source-checked extraction, persistent risk assessment, owner recovery questions, founder decisions and briefs, correction history, and scoped Agent Index collection. Includes a fictional three-milestone pilot, automated checks, multiplayer setup instructions, and a recording script.
 
 Live two-person demonstration, demo video, Agent Index registration, and verified leaderboard reporting are release acceptance items. They are not implied by the automated tests.
+
+### Participant onboarding and shared distribution
+
+- Added a read-only participant card with owner/milestone selection, joining packet, operator checklist, and explicit agent-connection limits.
+- Added DOM checks for attribution-safe packets, blocked role reassignment, safe addresses, and untrusted labels.
+- Added a plugin archive builder containing instructions, skill, HTML assets, and MIT license while excluding private state and hackathon reporting assets.
+- Documented one shared codebase for hackathon and community plugin releases.

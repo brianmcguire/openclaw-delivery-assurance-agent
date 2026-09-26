@@ -2,6 +2,8 @@
 
 A first delivery lead for startups and small agencies. It asks milestone owners for updates, records what they said, flags delivery concerns, follows up for a recovery action and date, and brings decisions to the founder.
 
+This project targets both the hackathon and distribution as an OpenClaw community plugin, using one codebase and shared releases. Agent Index reporting is optional operator setup for the hackathon. See [the release plan](docs/release-plan.md) for packaging boundaries and acceptance checks.
+
 **New here? Read [Start here](START-HERE.md), then send `DELIVERY START` in the agent conversation.** The guided walkthrough explains the role, offers a fictional example or your own project, checks identity, drafts project setup, and helps a second real person join. It is one shared agent with multiple human contributors.
 
 It runs in a shared OpenClaw conversation with a small local SQLite store. No PMO, dashboard, project-management subscription, or fixed model provider is required. All included project data is fictional.
@@ -129,6 +131,14 @@ Use a separate checkout, gateway profile, and data directory per trust boundary.
 ## Project setup card
 
 Send `DELIVERY FORM` in the browser conversation for a four-step inline form: project, team/milestones, cadence/rules, review. Choose fictional or real data, a two-person workflow or solo rehearsal, and an optional effort/budget baseline. The reviewed Create action submits through the current chat identity; the host still validates the project. Native clients without the prompt bridge can copy the reviewed command. Unsent form drafts disappear on reload. Live iOS compatibility is not yet verified.
+
+## Add a participant
+
+Send `DELIVERY PARTICIPANTS <project-id>` to open the joining card. Choose Person, select an existing unbound owner role, and enter the shared HTTPS conversation address. The card prepares text for you to share yourself; it sends nothing and grants no access. The gateway operator separately admits the person's own identity. They send WHOAMI and JOIN from their own account, then the agent confirms enrollment. The Agent option explains why Clawd/Sparx or agents on other gateways cannot yet connect.
+
+## Plugin distribution
+
+The same source builds an installable local plugin archive with `npm run package`. It includes both cards, workspace instructions, skill, and MIT license, without Agent Index reporting assets. See [plugin installation](docs/plugin-install.md) and [the shared release plan](docs/release-plan.md). Registry publication and upstream acceptance remain separate steps.
 
 ## Checks and usage reporting
 

@@ -7,14 +7,14 @@ Rules checked against the [official event](https://luma.com/zhkhsnpa), [Agent In
 | Requirement | Current evidence / remaining action |
 |---|---|
 | OpenClaw 2.0 | Pinned OpenClaw 2026.9.5; actual Control UI/tool verification described in `docs/verification.md`. |
-| Multiplayer and other people interact | Isolated Nexus gateway is healthy behind tailnet Serve; identity-aware proxy mode configured for one allowed login. Browser identity and a real second-person run remain unverified. Follow `demo-script.md`. |
+| Multiplayer and other people interact | Verified founder browser identity and card-created persistent fictional project. A real second-person run remains unverified. Follow `demo-script.md`. |
 | Real startup role | Delivery lead for customer pilots/projects; owner collection, recovery, escalation and founder decisions. |
 | Public open-source MIT repository | Published at [openclaw-delivery-assurance-agent](https://github.com/brianmcguire/openclaw-delivery-assurance-agent); GitHub recognizes MIT. Upstream client retains Apache-2.0 notices. |
 | Agent Index listing | Account credential and registration pending; exact command in `docs/agent-index.md`. |
 | Required client reports genuine usage | Current unmodified official client pinned September 25, with an installation-scoped collector. Offline tests/preview do not establish server acceptance. Perform and verify live report. |
 | 60+ second real demo video | 80–90 second shot list prepared. Two people must record real interactions and upload the actual video. |
 | No artificial usage/spam | Reporter only reads genuine completed-run counters. No installs, people, messages or video fabricated. |
-| Privacy and permissions | Public sample fictional; separate private state; four-tool allowlist; no external-send capability. Review package again before uploading evidence. |
+| Privacy and permissions | Public sample fictional; separate private state; six delivery tools plus the core widget renderer; no external-send capability. Review package again before uploading evidence. |
 | Verified entry for prizes | Complete organizer verification via the publishing page/community instructions after registration. |
 | Final links and submission | Fill video/Index URLs; check all public links; submit before deadline. |
 

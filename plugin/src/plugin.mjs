@@ -5,12 +5,14 @@ import { prepare, admit } from "./admission.mjs";
 import { currentProfile } from "./identity.mjs";
 import { onboarding } from "./onboarding.mjs";
 import { setupCard } from "./setup-card.mjs";
+import { participantCard } from "./participant-card.mjs";
 const names = [
   "delivery_record",
   "delivery_update",
   "delivery_brief",
   "delivery_checkin",
   "delivery_setup_card",
+  "delivery_participant_card",
 ];
 const str = { type: "string" },
   nullable = { anyOf: [str, { type: "null" }] },
@@ -123,6 +125,12 @@ export default {
           },
         });
         return [
+          wrap(
+            "delivery_participant_card",
+            "Prepare read-only person joining instructions for an existing project. No invitation is sent or access granted. Agent connections are not implemented. Render the exact returned widget_code with show_widget.",
+            object({project:str}),
+            ({project}) => participantCard(store.project(project), admission().actor),
+          ),
           wrap(
             "delivery_setup_card",
             "Prepare the reviewed project setup form as an inline widget. Read-only: return the exact widget_code to show_widget; no project is created until the user explicitly submits it.",

@@ -8,7 +8,7 @@ The runtime stamps attribution. For channel input it uses the trusted sender fie
 
 Session owner icons, Shared/Draft controls, and sidebar filters are not security boundaries. Anyone who can operate this agent shares the agent's capabilities and data. Use a dedicated OS account/container or separate host when another trust boundary is necessary. Reusing a native Codex login is an explicit local convenience; the host operator remains trusted. Public installation can use any configured OpenClaw provider instead.
 
-The agent's configured tool allowlist contains five delivery tools plus the core inline widget renderer. It has no shell, file, browser, external messaging, or project-system write tool. It can draft outreach in the conversation. Sending to a customer, changing a project system, or making a commitment is not implemented. A future integration must obtain explicit approval for recipient, content, and effect.
+The agent's configured tool allowlist contains six delivery tools plus the core inline widget renderer. It has no shell, file, browser, external messaging, or project-system write tool. It can draft outreach in the conversation. Sending to a customer, changing a project system, or making a commitment is not implemented. A future integration must obtain explicit approval for recipient, content, and effect.
 
 The source validator rejects invented spans, dates not present in the update, and unsupported numeric evidence. Status classification and interpretation still require judgment and can be wrong. Corrections are part of the workflow. Instructions inside updates do not authorize project creation, corrections, enrollment, decisions, or external effects.
 

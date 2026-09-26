@@ -48,3 +48,7 @@ Record this same sequence using [the demo shot list](submission/demo-script.md).
 ## If onboarding stops
 
 An unverified identity must be fixed at the gateway. A draft may need additional dates or owners. A second person may still need access or enrollment. The agent should tell you which step is pending instead of claiming success. See [troubleshooting](README.md#troubleshooting) and [verification](docs/verification.md) for current limits. Conversational setup drafts live in the chat; the project ledger becomes durable after submission.
+
+## Bring in the owner
+
+After creation, send `DELIVERY PARTICIPANTS <your-project-id>`. Select the owner and prepare the joining packet with the actual shared conversation HTTPS address. The operator must admit their own identity first. Share the packet yourself; the card sends nothing. The owner sends WHOAMI and JOIN from their own account. Confirm the record afterward. The Agent option explains the connection gap; it does not connect a bot.

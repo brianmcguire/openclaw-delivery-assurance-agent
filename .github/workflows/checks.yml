@@ -13,4 +13,5 @@ jobs:
           python-version: '3.12'
       - run: npm ci
       - run: npm test
+      - run: npm run package
       - run: python3 vendor/agent-index-client/agent_index_client.py --self-check

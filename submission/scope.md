@@ -2,7 +2,7 @@
 
 ## Implemented
 
-- Isolated OpenClaw 2026.9.5 workspace/plugin with five narrow delivery tools and the core inline widget renderer and configurable model provider.
+- Isolated OpenClaw 2026.9.5 workspace/plugin with six narrow delivery tools and the core inline widget renderer and configurable model provider.
 - Project creation, milestones, accountable owner aliases, baselines, cadence and escalation thresholds.
 - Runtime-attributed source records; explicit owner enrollment; source-validated extraction from free-form updates.
 - Deterministic delivery concerns, persistent recovery questions, duplicate suppression, founder decision queue, current brief and per-requester change history.

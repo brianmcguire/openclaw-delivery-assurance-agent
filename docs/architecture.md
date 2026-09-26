@@ -1,6 +1,6 @@
 # Architecture and data flow
 
-Delivery Assurance Agent has one OpenClaw workspace, five narrow delivery tools and the core inline widget renderer, and one local SQLite database. It does not need a separate web application.
+Delivery Assurance Agent has one OpenClaw workspace, six narrow delivery tools and the core inline widget renderer, and one local SQLite database. It does not need a separate web application.
 
 ```mermaid
 flowchart LR

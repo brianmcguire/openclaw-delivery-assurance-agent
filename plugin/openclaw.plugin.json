@@ -9,7 +9,8 @@
       "delivery_update",
       "delivery_brief",
       "delivery_checkin",
-      "delivery_setup_card"
+      "delivery_setup_card",
+      "delivery_participant_card"
     ]
   },
   "activation": { "onStartup": true },

@@ -1,0 +1,24 @@
+import {cpSync,mkdirSync,readFileSync,writeFileSync} from 'node:fs';
+import {resolve,join,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const release=join(root,'.local/releases');mkdirSync(release,{recursive:true});
+// A unique staging directory avoids removing or overwriting a prior artifact.
+const stage=join(release,'stage-'+Date.now());mkdirSync(stage);
+cpSync(join(root,'plugin'),stage,{recursive:true});
+cpSync(join(root,'workspace'),join(stage,'agent-workspace'),{recursive:true});
+cpSync(join(root,'LICENSE'),join(stage,'LICENSE'));
+cpSync(join(root,'docs/plugin-install.md'),join(stage,'README.md'));
+const manifest=JSON.parse(readFileSync(join(stage,'openclaw.plugin.json'),'utf8'));
+manifest.skills=['./agent-workspace/skills'];writeFileSync(join(stage,'openclaw.plugin.json'),JSON.stringify(manifest,null,2)+'\n');
+const pkg=JSON.parse(readFileSync(join(stage,'package.json'),'utf8'));
+pkg.files=['src','ui','agent-workspace','openclaw.plugin.json','LICENSE','README.md'];
+pkg.description='Evidence-based delivery coordination for a trusted startup team on OpenClaw.';
+pkg.repository={type:'git',url:'https://github.com/brianmcguire/openclaw-delivery-assurance-agent.git'};
+writeFileSync(join(stage,'package.json'),JSON.stringify(pkg,null,2)+'\n');
+const packed=JSON.parse(execFileSync('npm',['pack','--json','--ignore-scripts','--cache',join(root,'.local/npm-cache'),'--pack-destination',release],{cwd:stage,encoding:'utf8'}))[0];
+const required=['src/plugin.mjs','ui/setup-card.html','ui/participant-card.html','agent-workspace/AGENTS.md','agent-workspace/skills/delivery-assurance/SKILL.md','LICENSE'];
+for(const file of required)if(!packed.files.some(f=>f.path===file))throw Error('Missing package asset: '+file);
+if(packed.files.some(f=>f.path.startsWith('.local/')||/\.sqlite|^\.env|agent-index|^vendor\//.test(f.path)))throw Error('Private state or reporting assets in plugin package');
+console.log(JSON.stringify({artifact:join(release,packed.filename),files:packed.files.length,integrity:packed.integrity},null,2));
