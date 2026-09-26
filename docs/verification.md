@@ -2,6 +2,12 @@
 
 Verified September 22, 2026 Eastern time (September 23 UTC). This report separates automated tests, actual runtime execution, and the still-pending two-person pilot.
 
+## September 25 readiness update
+
+An isolated second installation on a Mac mini uses OpenClaw 2026.9.5 and a separate loopback gateway. Its tailnet-only HTTPS route and gateway health responded successfully. That route was changed from shared-token access to Tailscale identity via OpenClaw trusted-proxy mode, with the existing owner's login allowlisted; config validation passed and the prior isolated config was backed up. Browser profile admission and a second real person's contribution remain unverified. The host's other gateway and Serve routes were not changed.
+
+The official Agent Index client was refreshed to upstream commit `edf196031803e204cdbcd81ce574e1f54fd75f65`. Its new machine-wide OpenClaw collector is disabled by this project's wrapper so only this installation's genuine delivery-agent usage ledger is reported. Offline checks pass; registration and a live report remain pending a supported Plow credential. No demo video has been recorded.
+
 ## Actual environment and isolation
 
 Development used macOS, checkout-local Node 24.16.0 and OpenClaw 2026.9.5, the official Codex plugin, and an existing configured ChatGPT/Codex provider route. The original global OpenClaw 2026.4.14 installation and production remote gateway configuration were preserved. The delivery gateway uses a separate state directory, workspace, database, and loopback port 19789. The existing private delivery prototype repository was left untouched; its source was not copied into this public project.

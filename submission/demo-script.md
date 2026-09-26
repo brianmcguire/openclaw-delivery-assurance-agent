@@ -4,7 +4,7 @@ This is a recording plan, not a claim that a video exists. Use the fictional Har
 
 ## Prepare before recording
 
-1. Install and start the isolated gateway using the README and multiplayer guide. Confirm both people can open the same Shared session.
+1. Install and start the isolated gateway using the README and multiplayer guide. For an externally managed Serve route, configure trusted-proxy identity and allowlist both people's Tailscale logins first. Confirm both people can open the same Shared session.
 2. Each sends `DELIVERY WHOAMI`. Confirm distinct verified runtime IDs. A display name alone is insufficient. Capture that check with IDs partially redacted but distinguishable.
 3. Founder copies `node scripts/envelope.mjs PROJECT samples/project.json` to their clipboard. Owner opens `samples/owner-update.txt` and `samples/owner-recovery.txt` locally. Keep `samples/correction.json` available; obtain the actual current revision before using it.
 4. Record at least 60 seconds of the running agent. Target 85 seconds of edited footage. It is acceptable to trim real waiting time and label the cut; do not replace model results with a prewritten report. Keep an uncut source recording as evidence.

@@ -60,6 +60,9 @@ def main(argv):
             return {}
     client.from_agentsview = from_openclaw
     client.from_hermes = lambda days: {}
+    # The current upstream client also scans every OpenClaw agent store by
+    # default. This installation reports only this plugin's scoped ledger.
+    client.from_openclaw = lambda days: {}
     if argv == ['--preview']:
         # No credential checks, cleanup, registration, network, or client-state writes.
         print(json.dumps({'days': client.merge(collect(data / 'delivery.sqlite'))}, indent=2))

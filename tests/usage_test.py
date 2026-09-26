@@ -5,6 +5,8 @@ from pathlib import Path
 import sqlite3
 import tempfile
 import unittest
+from unittest.mock import patch
+from types import SimpleNamespace
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('adapter', ROOT / 'scripts/agent-index.py')
 adapter = importlib.util.module_from_spec(spec)
@@ -28,4 +30,20 @@ class UsageTests(unittest.TestCase):
         lock=json.loads((ROOT/'vendor/agent-index-client/UPSTREAM.json').read_text())
         actual=hashlib.sha256((ROOT/'vendor/agent-index-client/agent_index_client.py').read_bytes()).hexdigest()
         self.assertEqual(actual,lock['sha256'])
+    def test_wrapper_excludes_upstream_machine_wide_openclaw_collector(self):
+        with tempfile.TemporaryDirectory() as folder:
+            data = Path(folder) / 'data'
+            data.mkdir()
+            with sqlite3.connect(data / 'delivery.sqlite') as conn:
+                conn.execute('CREATE TABLE usage (run TEXT PRIMARY KEY, day TEXT, model TEXT, body TEXT)')
+                conn.execute('INSERT INTO usage VALUES (?,?,?,?)', ('real-run', datetime.date.today().isoformat(), 'provider/model', json.dumps({'input': 7, 'output': 2, 'cache_read': 0, 'cache_write': 0})))
+            client = SimpleNamespace(FAILURES=[], state_dir=None, TOKEN_PATH=None, STATE_PATH=None)
+            def inspect(_argv):
+                self.assertEqual(client.from_openclaw(28), {})
+                self.assertEqual(client.from_hermes(28), {})
+                self.assertEqual(client.from_agentsview(28)[datetime.date.today().isoformat()]['provider/model']['input'], 7)
+                return 0
+            client.main = inspect
+            with patch.object(adapter, 'load_client', return_value=client), patch.dict('os.environ', {'DELIVERY_DATA_DIR': str(data), 'DELIVERY_INDEX_STATE_DIR': str(Path(folder) / 'index')}):
+                self.assertEqual(adapter.main(['status']), 0)
 if __name__ == '__main__': unittest.main()

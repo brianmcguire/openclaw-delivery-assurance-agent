@@ -5,7 +5,7 @@ Use one isolated gateway for one trusted team. Current [OpenClaw multi-user guid
 ## Preferred path: shared Control UI through Tailscale Serve
 
 1. Install and sign in to Tailscale on the gateway host and each person's device. Invite the second person to the intended tailnet using their own identity. Keep grants/ACLs restricted to the trusted pilot team. This repository does not change tailnet membership or ACLs for you.
-2. Check `tailscale serve status` first. Do not replace an existing route. This install uses loopback port 19789 by default and optional OpenClaw-managed Serve. On a host with an existing HTTPS route, select a separate supported gateway deployment rather than overwriting it.
+2. Check `tailscale serve status` first. Do not replace an existing route. This install uses loopback port 19789 by default and optional OpenClaw-managed Serve. On a host with an existing HTTPS route, use a separate available Serve port with the identity-aware proxy configuration below, or deploy on a separate host.
 3. For a fresh installation, add `--tailscale` to `scripts/install.sh`. For an existing isolated setup with a free Serve route:
 
    ```bash
@@ -21,6 +21,12 @@ Use one isolated gateway for one trusted team. Current [OpenClaw multi-user guid
 6. The founder creates the project. The owner sends `DELIVERY JOIN harbor-pilot pilot-lead`, then the supplied free-form update. Both should see the owner-specific recovery question. The owner sends the recovery reply. The founder asks for a brief. Follow [the recording script](../submission/demo-script.md).
 
 Owner alias enrollment records the first runtime identity that claims the alias. Only admit trusted people and confirm the alias assignment together. The same identity cannot claim founder and pilot-lead to simulate a second person.
+
+## Existing Tailscale Serve route on a shared host
+
+When OpenClaw cannot own the host's HTTPS root route, a separate tailnet-only Serve route can proxy to this isolated loopback gateway. [OpenClaw's external Serve guidance](https://docs.openclaw.ai/gateway/tailscale#externally-managed-serve-and-funnel) treats this as generic proxy ingress; `allowTailscale` does not establish identity there. Use [trusted-proxy authentication](https://docs.openclaw.ai/gateway/trusted-proxy-auth) only when Tailscale Serve is the sole remote route to this listener and local processes on the host are trusted. Tailscale [strips incoming identity headers and supplies its own](https://tailscale.com/docs/features/tailscale-serve#identity-headers).
+
+For this route, set `gateway.bind: "loopback"`, `gateway.trustedProxies: ["127.0.0.1"]`, and `gateway.auth.mode: "trusted-proxy"`. Configure `gateway.auth.trustedProxy.userHeader: "tailscale-user-login"`, `requiredHeaders: ["x-forwarded-proto", "x-forwarded-host"]`, `allowLoopback: true`, and `allowUsers` with the two real contributors' Tailscale logins. Keep a separate local password for internal CLI checks. Validate the isolated config and test each person's `DELIVERY WHOAMI` through the HTTPS route before recording. Do not enable Funnel or use a shared gateway token as evidence of distinct contributors. This option trusts other local processes on the gateway host; use a dedicated host if that trust assumption does not hold.
 
 ## Cadence
 
