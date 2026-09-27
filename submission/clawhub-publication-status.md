@@ -21,3 +21,17 @@ I attempted to publish `@brianmcguire/delivery-assurance-agent` 0.1.0 using Claw
 Public source: https://github.com/brianmcguire/openclaw-delivery-assurance-agent/tree/06feed72971b0d0a8ba0b23d17142338b08b4a5e
 
 No credentials, private logs, or project records are attached. Send this yourself to the official OpenClaw/ClawHub support channel if the failure persists.
+
+## September 27 Delivery Lens retry
+
+Rebuilt from published commit `21723a760d5619e6fce4aae4fd04ed2483cb879a` under the same package identity, `@brianmcguire/delivery-assurance-agent` 0.1.0, with display name Delivery Lens. ClawHub CLI 0.23.3 is the current npm release; authenticated publisher is brianmcguire.
+
+- All 20 Node and 3 Python checks passed.
+- Official static inspector against OpenClaw 2026.9.5 returned zero issues.
+- Publication dry run passed: 20 files, 29,829 bytes.
+- Archive privacy scan passed, including comparison against locally available credentials without exposing them.
+- Archive SHA-256: `e314b0f7978b46f177f7742856034d041761b363e430f16c95ff1a29da7aee76`.
+- Actual publication again failed with the registry-side 512 MB Node.js action memory limit. This is not a package-size rejection or successful submission.
+- Post-attempt moderation status returned `Package not found`; no release or moderation receipt exists.
+
+The prepared artifact is generated locally under `.local/releases/brianmcguire-delivery-assurance-agent-0.1.0.tgz`. Follow `docs/plugin-publishing.md` to rebuild and retry with the recorded source commit after the registry issue is resolved. A ClawHub public installation cannot yet be verified. The MIT GitHub installation remains available.
