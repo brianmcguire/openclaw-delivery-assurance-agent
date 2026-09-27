@@ -2,6 +2,12 @@
 
 One delivery lead for a startup or small agency: collect owner updates, preserve evidence, track recovery plans, and bring decisions to the founder. Use one installation per trusted team. Project owners are human identities; independent agent enrollment is not implemented.
 
+## Example: a customer pilot is blocked
+
+A small startup is preparing a customer pilot. The milestone owner reports that field mapping is complete, but sandbox access is missing. Delivery Lens records the owner's statement, flags the blocker, and asks for a recovery action and date. The owner proposes preparing synthetic test data by Thursday and asks for approval. The founder's brief shows the plan, who owns it, the approval needed, and that sandbox access remains unresolved. If the owner corrects the target date, the next brief reflects it while preserving the original update.
+
+This is an illustrative use case. People supply updates through the shared OpenClaw conversation; Delivery Lens does not independently monitor sandbox access, generate test data, or send customer messages.
+
 ## Distribution artifact
 
 The repository's `npm run package` builds a local `.tgz` from the same plugin and workspace used for the hackathon. It includes all tools, both HTML cards, agent instructions, the delivery skill, and MIT license. Agent Index registration, credentials, external reporting scripts, and live data are excluded. This command does not publish to npm or ClawHub.
@@ -11,7 +17,7 @@ Use supported Node 24.16+ (excluding Node 25) or 26.1+, OpenClaw 2026.9.5, and y
 For an existing isolated profile, install the reviewed local artifact with its own state/config environment:
 
 ```bash
-openclaw plugins install /absolute/path/delivery-assurance-agent-0.1.1.tgz --force --accept-capabilities
+openclaw plugins install /absolute/path/delivery-assurance-agent-0.1.2.tgz --force --accept-capabilities
 ```
 
 `--accept-capabilities` accepts the reviewed six delivery tools; inspect the manifest first. OpenClaw installs this archive disabled until its required configuration is supplied.

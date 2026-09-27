@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 — 2026-09-27
+
+Adds a concrete blocked-pilot use case to the plugin description and README. Uses the manifest description in packaged metadata so the catalog and plugin stay consistent. No runtime behavior changes.
+
 ## 0.1.1 — 2026-09-27
 
 Changes the ClawHub category from Other to Productivity. Includes the OpenClaw integration guide in the plugin archive. Runtime behavior, plugin ID, DELIVERY commands, and persistent records are unchanged. Version 0.1.0 was confirmed published with clean ClawHub scans.

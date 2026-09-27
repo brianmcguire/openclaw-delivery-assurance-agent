@@ -1,9 +1,9 @@
 {
   "name": "delivery-assurance-agent",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
-  "description": "A startup delivery lead that tracks evidence, asks owners for recovery plans, and brings decisions to the founder.",
+  "description": "Your startup's delivery lead. Example: when sandbox access blocks a pilot, collect the owner's update, request a recovery plan, and bring the approval decision to the founder.",
   "license": "MIT",
   "engines": {
     "node": ">=24.16.0 <25 || >=26.1.0"

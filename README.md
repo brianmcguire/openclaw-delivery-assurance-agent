@@ -16,6 +16,12 @@ It runs in a shared OpenClaw conversation with a small local SQLite store. No PM
 
 The MVP includes project records, source-checked free-form updates, rule-based health, owner questions, correction history, founder decisions and briefs, and the official AI Worth Using client with an installation-scoped collector. See [verification](docs/verification.md) for the exact tested state and remaining hackathon acceptance items. Automated test identities are not a verified two-human demonstration.
 
+## Example: a customer pilot is blocked
+
+A small startup is preparing a customer pilot. The milestone owner reports that field mapping is complete, but sandbox access is missing. Delivery Lens records the owner's statement, flags the blocker, and asks for a recovery action and date. The owner proposes preparing synthetic test data by Thursday and asks for approval. The founder's brief shows the plan, who owns it, the approval needed, and that sandbox access remains unresolved. If the owner corrects the target date, the next brief reflects it while preserving the original update.
+
+This is an illustrative use case. People supply updates through the shared OpenClaw conversation; Delivery Lens does not independently monitor sandbox access, generate test data, or send customer messages.
+
 ## Requirements
 
 - macOS or Linux with npm and Python 3.10+.

@@ -1,7 +1,7 @@
 {
   "id": "delivery-assurance-agent",
   "name": "Delivery Lens",
-  "description": "Evidence-based project health and owner follow-up for trusted startup teams.",
+  "description": "Your startup's delivery lead. Example: when sandbox access blocks a pilot, collect the owner's update, request a recovery plan, and bring the approval decision to the founder.",
   "categories": [
     "productivity"
   ],

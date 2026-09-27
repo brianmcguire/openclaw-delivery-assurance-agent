@@ -24,7 +24,7 @@ const dirty=!!execFileSync('git',['status','--porcelain'],{cwd:root,encoding:'ut
 if(process.argv.includes('--release')&&dirty)throw Error('Release packaging requires a clean committed checkout. Commit reviewed changes first.');
 pkg.gitHead=commit;
 writeFileSync(join(stage,'BUILD.json'),JSON.stringify({repository:'https://github.com/brianmcguire/openclaw-delivery-assurance-agent',commit,dirty,openclawVersion:pkg.openclaw.build.openclawVersion},null,2)+'\n');
-pkg.description='Evidence-based delivery coordination for a trusted startup team on OpenClaw.';
+pkg.description=manifest.description;
 pkg.repository={type:'git',url:'https://github.com/brianmcguire/openclaw-delivery-assurance-agent.git'};
 writeFileSync(join(stage,'package.json'),JSON.stringify(pkg,null,2)+'\n');
 const packed=JSON.parse(execFileSync('npm',['pack','--json','--ignore-scripts','--cache',join(root,'.local/npm-cache'),'--pack-destination',release],{cwd:stage,encoding:'utf8'}))[0];
