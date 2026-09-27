@@ -1,6 +1,6 @@
 # Organizer verification request
 
-Status: not sent; organizer approval not received. The official publishing guide directs verification through [AI Worth Using Discord](https://discord.com/invite/73tTkm2gjS). Sign in with the entrant's existing account, then use the appropriate verification/help channel indicated by the server. Do not treat listing registration as organizer approval.
+Status: request sent September 27, 2026 at 2:12 p.m. ET from the entrant's existing Discord account in [AI Worth Using hackathon support](https://discord.com/channels/1519035948191449268/1544106357865586718). The posted request includes the repository, release commit, demo, real two-person pilot, and two accepted automatic reports. Organizer approval has not been received. The request asks whether the retrospective demo and local-install package meet verification requirements. Do not treat listing registration or sending this request as organizer approval.
 
 ## Message ready to post
 
