@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 — 2026-09-27
+
+Rewrites the plugin README around audience, three delivery use cases, an illustrative owner-to-founder conversation, multiplayer roles, daily operation, and working with existing tools. Moves operator setup below the walkthrough and preserves permission and verification limits. Documentation only; runtime behavior is unchanged.
+
 ## 0.1.2 — 2026-09-27
 
 Adds a concrete blocked-pilot use case to the plugin description and README. Uses the manifest description in packaged metadata so the catalog and plugin stay consistent. No runtime behavior changes.

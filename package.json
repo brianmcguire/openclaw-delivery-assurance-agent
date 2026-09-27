@@ -1,6 +1,6 @@
 {
   "name": "delivery-assurance-agent",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "type": "module",
   "description": "Your startup's delivery lead. Example: when sandbox access blocks a pilot, collect the owner's update, request a recovery plan, and bring the approval decision to the founder.",
