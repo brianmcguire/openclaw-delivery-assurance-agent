@@ -24,7 +24,7 @@ The wrapper also isolates the client's install identity and report key under `.l
    python3 scripts/agent-index.py --register \
      --agent delivery-assurance-agent \
      --name 'Delivery Lens' \
-     --blurb 'A startup delivery lead that asks owners for recovery plans and brings evidence-backed decisions to the founder.' \
+     --blurb 'When sandbox access blocks a pilot, Delivery Lens collects the owner update, requests a recovery plan, and brings the approval decision to the founder.' \
      --runtime 'OpenClaw 2.0' \
      --repo 'https://github.com/brianmcguire/openclaw-delivery-assurance-agent' \
      --install-url 'https://github.com/brianmcguire/openclaw-delivery-assurance-agent#installation'
@@ -58,3 +58,7 @@ The current publishing guide and official client README were rechecked on Septem
 ## September 27 current publishing status
 
 Registration and genuine server-accepted reporting are now verified. The existing listing was updated with YouTube ID `yOk-3M2gTH0`. The Mac mini has a dedicated user LaunchAgent, `studio.activa.delivery-lens.agent-index`, running a single report every 300 seconds using the installation's saved report credential. Its first scheduled run returned HTTP 200 / ok=true and exit 0. The report identity was preserved, and no login or API token is embedded in the plist. See [persistent reporting](reporting-operations.md). Organizer verification still requires the official community.
+
+## Use-case wording update
+
+The submission description and registration example now explain the blocked-pilot scenario. This documentation change does not itself update the live Agent Index listing or send a new organizer message. Keep the existing slug, video, repository, and install identity when updating registration metadata.

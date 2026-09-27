@@ -4,5 +4,6 @@
   "agent_index_url": "https://aiworthusing.com/agent-index/delivery-assurance-agent",
   "event_url": "https://luma.com/zhkhsnpa",
   "publishing_instructions_url": "https://aiworthusing.com/agent-index/publish",
-  "official_client_url": "https://github.com/plow-pbc/agent-index-client"
+  "official_client_url": "https://github.com/plow-pbc/agent-index-client",
+  "clawhub_plugin_url": "https://clawhub.ai/brianmcguire/plugins/delivery-assurance-agent"
 }
