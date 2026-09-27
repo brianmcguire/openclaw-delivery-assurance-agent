@@ -61,3 +61,7 @@ The release links source commit `be0ac20deea6c9c826854940da8ec5830374aacd`. Regi
 ## Version 0.1.1 category update
 
 Prepared and submitted from source commit `1a18de1fd3ccc63515184422ebeae65adb934017`, with manifest category `productivity`, retaining the package/runtime IDs. Official inspector returned zero issues and dry run passed, with 21 files and a 32,336-byte archive. Publication attempt `zx73xbaatqyxrj31ep8bppgqwn8f6cpz` was pending after the 45-second wait deadline. The last observed public release remains 0.1.0. Do not duplicate the pending upload; check registry status before claiming the label changed.
+
+## Version 0.1.1 confirmed and 0.1.2 description submitted
+
+Live public inspect confirms 0.1.1 is published with category `productivity` and clean scan status. Version 0.1.2 adds a blocked-pilot example to the manifest/package description and README, from source commit `0e01209a52c0cdc7a57d2a0a1590661a8bd84b86`. Static validation returned zero issues; dry run passed and archive checks confirmed the description, example, and retained category. The 21-file, 32,574-byte release was submitted under attempt `zx7bky7fjwxq6f4ncnrfzn4eg58f7zez`; it remained pending after the 45-second publication wait. Last public inspect still returned 0.1.1. Do not duplicate the pending upload or claim the example is live on ClawHub until public inspect returns the updated description.
