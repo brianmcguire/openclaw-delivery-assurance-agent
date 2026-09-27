@@ -22,6 +22,10 @@ Copy `agent-workspace/` from the installed plugin to a new dedicated workspace a
 
 Validate config and restart the isolated gateway. Configure authenticated multi-user ingress according to the repository multiplayer guide; one shared token does not distinguish contributors. Behind HTTPS proxies, expose the separate sandbox listener on its own origin for inline cards.
 
+## Work with existing OpenClaw capabilities
+
+See [Use Delivery Lens with OpenClaw](using-with-openclaw.md), included in this package, for setup, coexistence with existing agents, and practical workflows with other skills and plugins. Use a dedicated delivery agent with restricted tools. Do not overwrite your main assistant or assume another installed plugin is automatically connected.
+
 ## First use
 
 Send `DELIVERY START` or `DELIVERY FORM`, create the fictional project, then `DELIVERY PARTICIPANTS <project-id>`. Prepare the second person's joining instructions, admit their own identity separately, and confirm their WHOAMI and JOIN results. Ask for a brief after an owner update; request a correction draft to fix a fact while preserving evidence.

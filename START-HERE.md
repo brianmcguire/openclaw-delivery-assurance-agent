@@ -52,3 +52,7 @@ An unverified identity must be fixed at the gateway. A draft may need additional
 ## Bring in the owner
 
 After creation, send `DELIVERY PARTICIPANTS <your-project-id>`. Select the owner and prepare the joining packet with the actual shared conversation HTTPS address. The operator must admit their own identity first. Share the packet yourself; the card sends nothing. The owner sends WHOAMI and JOIN from their own account. Confirm the record afterward. The Agent option explains the connection gap; it does not connect a bot.
+
+## Already use OpenClaw?
+
+Read [Use Delivery Lens with OpenClaw](docs/using-with-openclaw.md) to add a dedicated delivery agent and work alongside your existing skills and plugins. The guide explains human handoffs, permissions, and integrations that remain planned.

@@ -142,6 +142,10 @@ Send `DELIVERY FORM` in the browser conversation for a four-step inline form: pr
 
 Send `DELIVERY PARTICIPANTS <project-id>` to open the joining card. Choose Person, select an existing unbound owner role, and enter the shared HTTPS conversation address. The card prepares text for you to share yourself; it sends nothing and grants no access. The gateway operator separately admits the person's own identity. They send WHOAMI and JOIN from their own account, then the agent confirms enrollment. The Agent option explains why Clawd/Sparx or agents on other gateways cannot yet connect.
 
+## Use with your existing OpenClaw tools
+
+Read [Use Delivery Lens with OpenClaw](docs/using-with-openclaw.md) for a first-use walkthrough, adding a dedicated agent to an existing trusted-team gateway, and working alongside coding, research, project-management, scheduling, and messaging plugins. Existing agents can help produce work; the accountable human reviews and submits the delivery update. Automatic agent enrollment and project-system synchronization are not implemented.
+
 ## Plugin distribution
 
 The same source builds an installable local plugin archive with `npm run package`. It includes both cards, workspace instructions, skill, and MIT license, without Agent Index reporting assets. See [plugin installation](docs/plugin-install.md), [registry publication](docs/plugin-publishing.md), and [the shared release plan](docs/release-plan.md). Registry publication and upstream acceptance remain separate steps.
