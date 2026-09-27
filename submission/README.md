@@ -46,11 +46,15 @@ See [installation](../README.md#installation), [multiplayer setup](../docs/multi
 
 ## Published plugin
 
-[Delivery Lens on ClawHub](https://clawhub.ai/brianmcguire/plugins/delivery-assurance-agent) is a community code plugin. Version 0.1.1 is confirmed published under Productivity; version 0.1.2 with the clearer use-case description was submitted and was pending at its last check. ClawHub publication is separate from hackathon organizer verification.
+[Delivery Lens on ClawHub](https://clawhub.ai/brianmcguire/plugins/delivery-assurance-agent) is a community code plugin. Version 0.1.3 is published under Productivity with a clean scan and an expanded use-case README. ClawHub publication is separate from hackathon organizer verification.
 
 ## Published demo
 
-[Watch Delivery Lens](https://youtu.be/yOk-3M2gTH0): an 88-second edited walkthrough of the completed real two-person pilot, using fictional data and AI-generated Cedar narration. Organizer acceptance of this retrospective format is pending.
+[Watch Delivery Lens](https://youtu.be/yOk-3M2gTH0): an 88-second edited walkthrough of the completed real two-person pilot, using fictional data and AI-generated Cedar narration. The organizer subsequently verified Delivery Lens; their reply did not separately discuss the retrospective video format.
+
+## Organizer verification
+
+The entrant provided a September 27 organizer reply stating “Delivery Lens is now Verified.” The organizer said they tested the published BYO setup through its native Codex route and confirmed the project workflow and separate-installer usage reporting. One-click remains off because this release has no cloud image; the organizer described that as by design. This is user-provided organizer correspondence, not an independently fetched public status page.
 
 ## Submission assets
 
@@ -64,4 +68,4 @@ See [installation](../README.md#installation), [multiplayer setup](../docs/multi
 - [Verification](../docs/verification.md): tested facts and outstanding acceptance gates.
 - [Official client steps](../docs/agent-index.md): registration, credential caveat, dry run, live report, and five-minute reporter.
 
-Do not submit until the real two-person demonstration, video, Agent Index entry, and successful genuine usage report exist. A prepared script is not a recorded demo.
+The real two-person demonstration, video, Agent Index entry, successful genuine usage report, and organizer verification are recorded. Keep the reporting host online for genuine usage through the September 30 leaderboard snapshot.
