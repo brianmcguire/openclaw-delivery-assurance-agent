@@ -6,6 +6,22 @@ The hackathon entry and OpenClaw plugin distribution use the same codebase and r
 
 **One-sentence pitch:** Your startup's first delivery lead: turn owner updates and blockers into recovery plans and clear founder decisions in a shared OpenClaw conversation.
 
+## Who Delivery Lens is for
+
+Use Delivery Lens when customer delivery takes too much of the founder's attention, but the team is not ready to hire a delivery lead. It is intended for small startups and agencies managing customer projects or pilots, especially teams already using OpenClaw.
+
+Updates are scattered, owners say "working on it," blockers linger, and the founder discovers a missed commitment too late. Delivery Lens gives the team a repeatable workflow:
+
+- Collect updates from the people responsible for milestones.
+- Spot threatened dates and unresolved blockers.
+- Ask for a recovery action and date.
+- Bring the founder specific decisions backed by the original updates.
+- Preserve corrections so the current brief stays accurate.
+
+For example, an owner reports that sandbox access is blocking a pilot. Delivery Lens asks for a recovery plan. The owner proposes synthetic data, and the founder's brief shows the approval needed while keeping the original blocker open.
+
+The team works in a shared OpenClaw conversation without introducing another dashboard. Owners still need to provide updates; automatic monitoring of external project systems is not implemented.
+
 ## Agent Index description
 
 Small teams often discover delivery trouble after a promised date has slipped. Delivery Lens keeps a durable project record in a shared OpenClaw conversation. It asks milestone owners for updates, attributes each reply to its authenticated contributor, detects date threats and blockers, requests a recovery action and date, and escalates decisions to the founder. Original statements and corrections remain traceable. It does not send customer messages or make commitments. For example, when missing sandbox access blocks a pilot, it asks the owner for a dated recovery plan and brings the synthetic-data approval decision to the founder.

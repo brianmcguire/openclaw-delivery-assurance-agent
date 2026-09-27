@@ -2,6 +2,22 @@
 
 One delivery lead for a startup or small agency: collect owner updates, preserve evidence, track recovery plans, and bring decisions to the founder. Use one installation per trusted team. Project owners are human identities; independent agent enrollment is not implemented.
 
+## Who Delivery Lens is for
+
+Use Delivery Lens when customer delivery takes too much of the founder's attention, but the team is not ready to hire a delivery lead. It is intended for small startups and agencies managing customer projects or pilots, especially teams already using OpenClaw.
+
+Updates are scattered, owners say "working on it," blockers linger, and the founder discovers a missed commitment too late. Delivery Lens gives the team a repeatable workflow:
+
+- Collect updates from the people responsible for milestones.
+- Spot threatened dates and unresolved blockers.
+- Ask for a recovery action and date.
+- Bring the founder specific decisions backed by the original updates.
+- Preserve corrections so the current brief stays accurate.
+
+For example, an owner reports that sandbox access is blocking a pilot. Delivery Lens asks for a recovery plan. The owner proposes synthetic data, and the founder's brief shows the approval needed while keeping the original blocker open.
+
+The team works in a shared OpenClaw conversation without introducing another dashboard. Owners still need to provide updates; automatic monitoring of external project systems is not implemented.
+
 ## Example: a customer pilot is blocked
 
 A small startup is preparing a customer pilot. The milestone owner reports that field mapping is complete, but sandbox access is missing. Delivery Lens records the owner's statement, flags the blocker, and asks for a recovery action and date. The owner proposes preparing synthetic test data by Thursday and asks for approval. The founder's brief shows the plan, who owns it, the approval needed, and that sandbox access remains unresolved. If the owner corrects the target date, the next brief reflects it while preserving the original update.
