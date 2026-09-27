@@ -1,6 +1,6 @@
 # ClawHub publication support request
 
-Draft only. No support message or GitHub comment has been sent. The latest retry created a pending publication attempt; do not report it as another memory failure or upload again while pending.
+Resolved for this release: live registry checks now confirm published 0.1.0 with clean scans and downloads unblocked. No support message or GitHub comment was sent. Keep this draft as historical diagnostics; no escalation is currently needed. The latest retry created a pending publication attempt; do not report it as another memory failure or upload again while pending.
 
 Post as an additional reproduction on the existing issue, rather than opening a duplicate:
 https://github.com/openclaw/clawhub/issues/3788
