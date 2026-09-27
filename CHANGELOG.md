@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 — 2026-09-27
+
+Changes the ClawHub category from Other to Productivity. Includes the OpenClaw integration guide in the plugin archive. Runtime behavior, plugin ID, DELIVERY commands, and persistent records are unchanged. Version 0.1.0 was confirmed published with clean ClawHub scans.
+
 ## Submission update — 2026-09-27
 
 Renamed the public agent to Delivery Lens while preserving plugin IDs and DELIVERY commands. Verified a real two-person fictional pilot, recovery follow-up, evidence attribution, and audited correction. Added the published Cedar demo link and Agent Index registration/reporting evidence. Enabled isolated five-minute reporting on the demo host. Organizer verification and community registry publication remain pending.

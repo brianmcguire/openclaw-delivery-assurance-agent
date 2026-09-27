@@ -11,7 +11,7 @@ Use supported Node 24.16+ (excluding Node 25) or 26.1+, OpenClaw 2026.9.5, and y
 For an existing isolated profile, install the reviewed local artifact with its own state/config environment:
 
 ```bash
-openclaw plugins install /absolute/path/delivery-assurance-agent-0.1.0.tgz --force --accept-capabilities
+openclaw plugins install /absolute/path/delivery-assurance-agent-0.1.1.tgz --force --accept-capabilities
 ```
 
 `--accept-capabilities` accepts the reviewed six delivery tools; inspect the manifest first. OpenClaw installs this archive disabled until its required configuration is supplied.

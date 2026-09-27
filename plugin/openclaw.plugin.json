@@ -2,7 +2,9 @@
   "id": "delivery-assurance-agent",
   "name": "Delivery Lens",
   "description": "Evidence-based project health and owner follow-up for trusted startup teams.",
-  "categories": ["other"],
+  "categories": [
+    "productivity"
+  ],
   "contracts": {
     "tools": [
       "delivery_record",
@@ -13,15 +15,27 @@
       "delivery_participant_card"
     ]
   },
-  "activation": { "onStartup": true },
+  "activation": {
+    "onStartup": true
+  },
   "configSchema": {
     "type": "object",
     "additionalProperties": false,
     "properties": {
-      "dataDir": { "type": "string" },
-      "agentId": { "type": "string", "default": "delivery-assurance-agent" },
-      "allowUnverifiedLocal": { "type": "boolean", "default": false }
+      "dataDir": {
+        "type": "string"
+      },
+      "agentId": {
+        "type": "string",
+        "default": "delivery-assurance-agent"
+      },
+      "allowUnverifiedLocal": {
+        "type": "boolean",
+        "default": false
+      }
     },
-    "required": ["dataDir"]
+    "required": [
+      "dataDir"
+    ]
   }
 }

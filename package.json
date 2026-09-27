@@ -1,6 +1,6 @@
 {
   "name": "delivery-assurance-agent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "description": "A startup delivery lead that tracks evidence, asks owners for recovery plans, and brings decisions to the founder.",
