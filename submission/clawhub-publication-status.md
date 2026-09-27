@@ -65,3 +65,9 @@ Prepared and submitted from source commit `1a18de1fd3ccc63515184422ebeae65adb934
 ## Version 0.1.1 confirmed and 0.1.2 description submitted
 
 Live public inspect confirms 0.1.1 is published with category `productivity` and clean scan status. Version 0.1.2 adds a blocked-pilot example to the manifest/package description and README, from source commit `0e01209a52c0cdc7a57d2a0a1590661a8bd84b86`. Static validation returned zero issues; dry run passed and archive checks confirmed the description, example, and retained category. The 21-file, 32,574-byte release was submitted under attempt `zx7bky7fjwxq6f4ncnrfzn4eg58f7zez`; it remained pending after the 45-second publication wait. Last public inspect still returned 0.1.1. Do not duplicate the pending upload or claim the example is live on ClawHub until public inspect returns the updated description.
+
+## Version 0.1.3 expanded README published
+
+Live public inspect confirmed 0.1.2 before this release. Version 0.1.3 rewrites the README around three practical use cases, an illustrative owner/founder conversation, expected brief content, onboarding, and handoffs alongside existing tools. Installation and operator details follow the product walkthrough. This is a documentation-only release from source commit `ad9ca4a36d4a19ac61051d8ee6c1c558a92b1e07`.
+
+Official static validation returned zero issues and the dry run passed: 21 files, 34,042 bytes. Publication completed under attempt `zx72qg3mww0mtrvy43pt578z0x8f6xt2`, release `rd7d9m5f73e3900pdw7bkkrkw18f6zea`. Authenticated moderation and public inspect both confirm version 0.1.3, clean scans, and downloads unblocked. Public README retrieval confirms the expanded text. Archive SHA-256: `8df2ff7946199f74dc963d04db0d8e76b2d6dbc1339ed2320fe4b50c81349a0f`. A fresh registry installation remains unverified; publication does not establish runtime compatibility beyond the recorded checks.
