@@ -35,3 +35,19 @@ Rebuilt from published commit `21723a760d5619e6fce4aae4fd04ed2483cb879a` under t
 - Post-attempt moderation status returned `Package not found`; no release or moderation receipt exists.
 
 The prepared artifact is generated locally under `.local/releases/brianmcguire-delivery-assurance-agent-0.1.0.tgz`. Follow `docs/plugin-publishing.md` to rebuild and retry with the recorded source commit after the registry issue is resolved. A ClawHub public installation cannot yet be verified. The MIT GitHub installation remains available.
+
+## September 27 pending retry after upstream issue investigation
+
+A bounded retry from source commit `be0ac20deea6c9c826854940da8ec5830374aacd` began at 18:34:26 UTC. The CLI returned at 18:35:59 UTC with a 45-second publication wait timeout and attempt ID `zx77k0etgccw0sn4bhq1mxmpqs8f6y7b`, still pending. Unlike prior attempts, the owner moderation endpoint now reports an existing Delivery Lens package, `scanStatus: pending`, and `latestRelease: null`. Public inspect remains unavailable. This confirms a staged attempt, not public publication or installation. Do not upload another copy while pending.
+
+The same memory error is tracked at https://github.com/openclaw/clawhub/issues/3788. Another reporter described an unchanged-artifact retry succeeding. That is upstream evidence of intermittency, not proof our checks will finish. See `clawhub-support-request.md` for the prepared, unsent diagnostic request.
+
+Check from the development checkout:
+
+```bash
+export PATH="$PWD/.local/node/node_modules/node/bin:$PATH"
+.local/publish-cli/node_modules/.bin/clawhub package moderation-status @brianmcguire/delivery-assurance-agent --json
+.local/publish-cli/node_modules/.bin/clawhub package inspect @brianmcguire/delivery-assurance-agent --json
+```
+
+Hosted backend memory/stage logs require registry maintainers. The local captured error is `.local/clawhub-lens-publish-result.json`; the timestamped latest result is `.local/clawhub-lens-retry-diagnostic.json`. Neither contains a hosted memory profile.
