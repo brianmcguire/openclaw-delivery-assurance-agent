@@ -57,3 +57,7 @@ Hosted backend memory/stage logs require registry maintainers. The local capture
 Live authenticated registry checks after the founder observed the public New Plugins listing confirm Delivery Lens 0.1.0 is published as `@brianmcguire/delivery-assurance-agent`, family `code-plugin`, community channel. Package and latest-release scan status are `clean`; `blockedFromDownload` is false. Public inspect returns latest version 0.1.0 and all 21 packaged files. SHA-256 matches the reviewed archive: `6bd3a09d09f82cbc1941342647ceb365708f3c39225ac6605417c6ae3fc8f8f9`.
 
 The release links source commit `be0ac20deea6c9c826854940da8ec5830374aacd`. Registry verification is `source-linked`, scope `artifact-only`, `hasProvenance:false`; this is not official OpenClaw endorsement or full build provenance. A fresh registry installation and workflow check have not yet been performed. The earlier memory failure cleared on the bounded retry; no support request was sent.
+
+## Version 0.1.1 category update
+
+Prepared and submitted from source commit `1a18de1fd3ccc63515184422ebeae65adb934017`, with manifest category `productivity`, retaining the package/runtime IDs. Official inspector returned zero issues and dry run passed, with 21 files and a 32,336-byte archive. Publication attempt `zx73xbaatqyxrj31ep8bppgqwn8f6cpz` was pending after the 45-second wait deadline. The last observed public release remains 0.1.0. Do not duplicate the pending upload; check registry status before claiming the label changed.
