@@ -43,7 +43,7 @@ const config = {
     },
     entries: {
       "delivery-assurance-agent": {
-        name: "Delivery Assurance Agent",
+        name: "Delivery Lens",
         workspace,
         skills: ["delivery-assurance"],
       },

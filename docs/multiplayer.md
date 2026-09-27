@@ -17,7 +17,7 @@ Use one isolated gateway for one trusted team. Current [OpenClaw multi-user guid
    ```
 
 4. Both people open `https://YOUR_HOST.YOUR_TAILNET.ts.net/`. OpenClaw-managed Serve verifies Tailscale identity. Use the actual URL shown by startup. Do not expose the token-authenticated loopback service to the public internet or turn on Funnel for this demo.
-5. Select Delivery Assurance Agent and open the same Shared session. Confirm that the UI identifies each person differently. Send `DELIVERY WHOAMI` from each account and confirm two distinct runtime identities in the replies. If either is unverified, stop the multiplayer test and repair identity admission.
+5. Select Delivery Lens and open the same Shared session. Confirm that the UI identifies each person differently. Send `DELIVERY WHOAMI` from each account and confirm two distinct runtime identities in the replies. If either is unverified, stop the multiplayer test and repair identity admission.
 6. The founder creates the project. The owner sends `DELIVERY JOIN harbor-pilot pilot-lead`, then the supplied free-form update. Both should see the owner-specific recovery question. The owner sends the recovery reply. The founder asks for a brief. Follow [the recording script](../submission/demo-script.md).
 
 Owner alias enrollment records the first runtime identity that claims the alias. Only admit trusted people and confirm the alias assignment together. The same identity cannot claim founder and pilot-lead to simulate a second person.

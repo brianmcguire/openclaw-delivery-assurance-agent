@@ -19,7 +19,7 @@ Get the official `clawhub` CLI from its documented source. The development check
 clawhub package validate 'STAGE' --openclaw-version 2026.9.5 --out .local/plugin-inspection
 clawhub package publish 'STAGE' --family code-plugin \
   --name '@OWNER/delivery-assurance-agent' --owner OWNER \
-  --display-name 'Delivery Assurance Agent' \
+  --display-name 'Delivery Lens' \
   --source-repo brianmcguire/openclaw-delivery-assurance-agent \
   --source-commit COMMIT --source-ref COMMIT --source-path . --dry-run
 ```

@@ -1,4 +1,4 @@
-# Delivery Assurance Agent plugin
+# Delivery Lens plugin
 
 One delivery lead for a startup or small agency: collect owner updates, preserve evidence, track recovery plans, and bring decisions to the founder. Use one installation per trusted team. Project owners are human identities; independent agent enrollment is not implemented.
 

@@ -92,3 +92,35 @@ The official ClawHub CLI 0.23.3 static Plugin Inspector passed against the stage
 The official ClawHub publication dry run also succeeded for the 20-file clean release candidate from `4122878`. Source ref/path were explicitly set to the source commit and repository root to avoid auto-detecting the ignored local staging folder. This preview uploaded nothing and did not validate account ownership or complete registry moderation. The final scoped name awaits the publisher's actual ClawHub owner handle.
 
 The publisher subsequently supplied `brianmcguire` and completed ClawHub login; `whoami` confirmed that identity. The clean scoped artifact from `06feed7` passed local inspection and publication preview. Actual publication failed with the registry action's 512 MB memory limit; a subsequent moderation-status query returned Package not found. No public registry release is claimed. See [publication status and support draft](../submission/clawhub-publication-status.md).
+
+
+## September 27 real two-person pilot
+
+The founder and a different real project owner interacted in the same live Mac mini Control UI conversation using distinct verified runtime identities. The fictional Harbor pilot was already created by the founder on September 26. On September 27 the owner verified identity, joined the pilot-lead role, submitted a blocker update, answered the agent's recovery question, and applied a target-date correction. The founder requested briefs before and after the recovery and correction. This was a real two-person interaction; the project and delivery statements were explicitly fictional.
+
+Read-only checks of the persistent SQLite store confirmed runtime attribution and original source receipts; two evidence-backed concerns; the recovery question marked answered; a synthetic-dataset recovery action due September 29; and the target corrected from September 30 to September 29 at revision 4. The correction event retained before/after values and the original update remained intact. The updated on-screen founder brief reflected the correction, resolved the target-date concern, retained the sandbox blocker and recovery plan, and kept synthetic-data approval pending. No budget baseline or variance was invented.
+
+Network policy was restricted to the owner's Delivery Assurance HTTPS chat and widget ports, with separate gateway identity admission. Cross-network machine-share acceptance was not independently confirmed; the actual owner's verified chat access was confirmed. This does not establish project-level tenant isolation or agent-to-agent participation. Private account identifiers, network addresses, and invitation credentials are omitted here.
+
+The seven-step pilot scenario is verified. A 60+ second recorded video, Agent Index registration/server-accepted genuine usage reporting, organizer verification, and successful ClawHub publication remain pending.
+
+
+## Public name
+
+Renamed to Delivery Lens on September 27. Existing delivery-assurance-agent plugin/agent identifiers, DELIVERY commands, repository URL, and persistent project records are retained. Earlier verification entries use the name displayed at the time.
+
+
+## September 27 Agent Index registration and first report
+
+The official client running alongside the Mac mini installation registered Delivery Lens under the retained delivery-assurance-agent slug. Registration returned the public listing URL https://aiworthusing.com/agent-index/delivery-assurance-agent. The first genuine usage report returned HTTP 200 with ok=true, three days and three model/day rows. Reported counters came from this installation's durable completed-run usage ledger, including the real pilot; no artificial activity was generated. The public listing could not be fetched by the web tool during this check, so public rendering and organizer verification remain pending. Continuous five-minute reporting is not yet supervised. No demo video URL exists yet.
+
+
+## September 27 demo video publication
+
+An 88.15-second, 1920×1080 edited walkthrough uses actual saved captures from the completed two-person pilot, with OpenAI Cedar AI-generated narration. The entire local video decoded without errors. It is explicitly labeled as a completed pilot replay with fictional project data, not a continuous live screen recording. The founder approved the finished video and uploaded it to YouTube as Unlisted: https://youtu.be/yOk-3M2gTH0. User-supplied screenshots show saved unlisted visibility, completed SD/HD processing, and playback after the requested private-window check. This is user-supplied playback evidence, not an independently performed signed-out playback test. Organizer acceptance of the retrospective format remains unverified.
+
+## September 27 release and persistent reporting check
+
+All 20 Node and 3 Python checks passed on checkout-local Node 24.16.0; the unmodified official client self-check and git diff whitespace check passed. The dedicated Mac mini user LaunchAgent is registered with StartInterval 300 and RunAtLoad true. Its first automatic invocation exited 0 and returned HTTP 200 / ok=true for the existing installation and three usage rows. No new model traffic or install identity was created. The full five-minute interval and reboot recovery have not yet been observed; a user LaunchAgent resumes after operator login, and reporting depends on the host being awake and online.
+
+The YouTube ID was corrected from the initially misread character to `yOk-3M2gTH0`, and the official registration client returned updated for the existing Delivery Lens listing. Organizer verification is not complete: the linked Discord currently presents a sign-in/create-account page. No verification message has been sent or approval received.

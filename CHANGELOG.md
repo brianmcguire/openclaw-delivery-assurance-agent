@@ -1,6 +1,10 @@
 # Changelog
 
-## Unreleased — 2026-09-26
+## Submission update — 2026-09-27
+
+Renamed the public agent to Delivery Lens while preserving plugin IDs and DELIVERY commands. Verified a real two-person fictional pilot, recovery follow-up, evidence attribution, and audited correction. Added the published Cedar demo link and Agent Index registration/reporting evidence. Enabled isolated five-minute reporting on the demo host. Organizer verification and community registry publication remain pending.
+
+## Onboarding additions — 2026-09-26
 
 Adds `DELIVERY FORM` inline project cards with multiple-choice paths, text/date fields, milestones, optional baselines, and review-before-submit. Browser prompts preserve host admission; native clients can copy the reviewed command. Adds DOM checks for form entry, validation, review, identity limits, and submission.
 

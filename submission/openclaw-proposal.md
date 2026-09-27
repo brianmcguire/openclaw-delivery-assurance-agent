@@ -1,8 +1,8 @@
-# Draft proposal: Delivery Assurance community plugin
+# Draft proposal: Delivery Lens community plugin
 
 This is a draft for maintainer discussion, not a filed issue or PR.
 
-Small startup teams need someone to collect owner updates, notice threatened delivery dates, ask for a recovery plan, and bring decisions to the founder. Delivery Assurance implements that role in one shared OpenClaw conversation, with a durable SQLite record and attributed source evidence.
+Small startup teams need someone to collect owner updates, notice threatened delivery dates, ask for a recovery plan, and bring decisions to the founder. Delivery Lens implements that role in one shared OpenClaw conversation, with a durable SQLite record and attributed source evidence.
 
 Repository: https://github.com/brianmcguire/openclaw-delivery-assurance-agent
 

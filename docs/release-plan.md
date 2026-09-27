@@ -1,6 +1,6 @@
 # One codebase, two distribution paths
 
-Delivery Assurance Agent is intended for both the AI Worth Using x OpenClaw hackathon and distribution as an OpenClaw community plugin. Both use the same delivery logic, persistent store, onboarding, setup card, prompts, and tests. Maintain one repository and shared release versions; do not fork a separate hackathon implementation.
+Delivery Lens is intended for both the AI Worth Using x OpenClaw hackathon and distribution as an OpenClaw community plugin. Both use the same delivery logic, persistent store, onboarding, setup card, prompts, and tests. Maintain one repository and shared release versions; do not fork a separate hackathon implementation.
 
 ## Package boundaries
 
@@ -38,6 +38,8 @@ Official references, checked September 26, 2026:
 - [OpenClaw vision](https://github.com/openclaw/openclaw/blob/main/VISION.md)
 - [Plugin documentation](https://docs.openclaw.ai/tools/plugin)
 
-## Current gaps
+## Current status — September 27
 
-The browser setup card has created a persistent fictional project under one verified founder identity. The two-person pilot, live iOS behavior, a clean provider lifecycle and complete project workflow from the installed artifact, community package publication, Agent Index registration/reporting, video, and upstream proposal remain pending. See [verification](verification.md) for the detailed evidence.
+The real two-person pilot is verified, the 88-second Cedar demo is uploaded unlisted, and Agent Index registration and genuine reports have been accepted. A dedicated Mac mini launchd job runs the existing reporter every 300 seconds; its first run exited 0 with an HTTP 200 response. It resumes at the operator's login and needs an awake, connected machine.
+
+Organizer verification and public listing rendering remain unverified. Community package publication is blocked by the previously observed ClawHub backend failure. Live iOS behavior, other providers, a complete fresh-package multiplayer workflow, and upstream acceptance remain unverified. See [verification](verification.md).

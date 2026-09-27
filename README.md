@@ -1,4 +1,10 @@
-# Delivery Assurance Agent
+# Delivery Lens
+
+*Your startup’s delivery lead.*
+
+[Watch the 88-second multiplayer demo](https://youtu.be/yOk-3M2gTH0) · [Agent Index entry](https://aiworthusing.com/agent-index/delivery-assurance-agent)
+
+The demo walks through actual saved interactions from a completed two-person pilot with fictional project data. It is labeled as a retrospective replay with AI-generated narration.
 
 A first delivery lead for startups and small agencies. It asks milestone owners for updates, records what they said, flags delivery concerns, follows up for a recovery action and date, and brings decisions to the founder.
 

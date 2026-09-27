@@ -23,7 +23,7 @@ The wrapper also isolates the client's install identity and report key under `.l
    ```bash
    python3 scripts/agent-index.py --register \
      --agent delivery-assurance-agent \
-     --name 'Delivery Assurance Agent' \
+     --name 'Delivery Lens' \
      --blurb 'A startup delivery lead that asks owners for recovery plans and brings evidence-backed decisions to the founder.' \
      --runtime 'OpenClaw 2.0' \
      --repo 'https://github.com/brianmcguire/openclaw-delivery-assurance-agent' \
@@ -49,3 +49,12 @@ The wrapper also isolates the client's install identity and report key under `.l
 7. Follow [Agent Index publishing](https://aiworthusing.com/agent-index/publish) and the linked [community Discord](https://aiworthusing.com/agent-index/publish) for verification. The publishing page currently says prize qualification requires a verified entry. One-click deploy requires a separately approved image and organizer enablement; this repository is a local install, not a claimed one-click deployment.
 
 No registration or live report is attempted without the appropriate credential. No stories, customer data, prompts, project names, or source text are sent by the collector. The registration fields and video are public by design.
+
+
+## September 27 pilot reporting readiness
+
+The current publishing guide and official client README were rechecked on September 27. The guide still requires MIT licensing, usage reporting, and organizer verification for prizes. The Mac mini installation has genuine completed-run usage counters from the real two-person pilot, but registration status returned absent and neither the development Mac nor gateway host had a Plow login credential at this check. Local preview succeeded; no live report was sent. Preserve the Mac mini install identity when registering and reporting its usage. The host-login versus agent-scoped credential distinction above remains unresolved until a supported credential is accepted.
+
+## September 27 current publishing status
+
+Registration and genuine server-accepted reporting are now verified. The existing listing was updated with YouTube ID `yOk-3M2gTH0`. The Mac mini has a dedicated user LaunchAgent, `studio.activa.delivery-lens.agent-index`, running a single report every 300 seconds using the installation's saved report credential. Its first scheduled run returned HTTP 200 / ok=true and exit 0. The report identity was preserved, and no login or API token is embedded in the plist. See [persistent reporting](reporting-operations.md). Organizer verification still requires the official community.

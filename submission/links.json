@@ -1,7 +1,7 @@
 {
   "repository_url": "https://github.com/brianmcguire/openclaw-delivery-assurance-agent",
-  "demo_video_url": null,
-  "agent_index_url": null,
+  "demo_video_url": "https://youtu.be/yOk-3M2gTH0",
+  "agent_index_url": "https://aiworthusing.com/agent-index/delivery-assurance-agent",
   "event_url": "https://luma.com/zhkhsnpa",
   "publishing_instructions_url": "https://aiworthusing.com/agent-index/publish",
   "official_client_url": "https://github.com/plow-pbc/agent-index-client"

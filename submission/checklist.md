@@ -7,16 +7,16 @@ Rules checked against the [official event](https://luma.com/zhkhsnpa), [Agent In
 | Requirement | Current evidence / remaining action |
 |---|---|
 | OpenClaw 2.0 | Pinned OpenClaw 2026.9.5; actual Control UI/tool verification described in `docs/verification.md`. |
-| Multiplayer and other people interact | Verified founder browser identity and card-created persistent fictional project. A real second-person run remains unverified. Follow `demo-script.md`. |
+| Multiplayer and other people interact | Real founder and distinct verified project owner completed the live seven-step fictional pilot on September 27: enrollment, blocker, recovery, founder brief, correction and updated brief. See `docs/verification.md`. An 88-second retrospective walkthrough of actual pilot captures is uploaded unlisted; organizer acceptance of that format remains unverified. |
 | Real startup role | Delivery lead for customer pilots/projects; owner collection, recovery, escalation and founder decisions. |
 | Public open-source MIT repository | Published at [openclaw-delivery-assurance-agent](https://github.com/brianmcguire/openclaw-delivery-assurance-agent); GitHub recognizes MIT. Upstream client retains Apache-2.0 notices. |
-| Agent Index listing | Account credential and registration pending; exact command in `docs/agent-index.md`. |
-| Required client reports genuine usage | Current unmodified official client pinned September 25, with an installation-scoped collector. Offline tests/preview do not establish server acceptance. Perform and verify live report. |
-| 60+ second real demo video | 80–90 second shot list prepared. Two people must record real interactions and upload the actual video. |
+| Agent Index listing | Registered Delivery Lens on September 27: https://aiworthusing.com/agent-index/delivery-assurance-agent. Public rendering and organizer verification remain pending. |
+| Required client reports genuine usage | Official client first genuine report accepted September 27: HTTP 200, ok=true, three days / three rows. Dedicated Mac mini launchd job configured at 300 seconds; first automatic run accepted with HTTP 200 / ok=true. Host must be awake, online, and logged in. |
+| 60+ second real demo video | [88-second Delivery Lens demo](https://youtu.be/yOk-3M2gTH0) uploaded unlisted. Actual two-person pilot captures with Cedar narration; labeled completed-pilot replay, not a live screen recording. Playback shown in user-provided screenshot; organizer format acceptance pending. |
 | No artificial usage/spam | Reporter only reads genuine completed-run counters. No installs, people, messages or video fabricated. |
 | Privacy and permissions | Public sample fictional; separate private state; six delivery tools plus the core widget renderer; no external-send capability. Review package again before uploading evidence. |
 | Verified entry for prizes | Complete organizer verification via the publishing page/community instructions after registration. |
-| Final links and submission | Fill video/Index URLs; check all public links; submit before deadline. |
+| Final links and submission | Repository, video, and Index links are filled. Confirm public Index rendering and organizer verification before treating submission as complete. |
 
 ## Agent Index steps, in order
 

@@ -13,7 +13,7 @@ This is a recording plan, not a claim that a video exists. Use the fictional Har
 
 | Time | Person and screen | Action / on-screen text | Narration |
 |---|---|---|---|
-| 0–8s | Split view of founder and owner | Show the two identity replies and the same Shared conversation. | “This is Delivery Assurance Agent, the first delivery lead for a small startup. Two people are using the same project conversation.” |
+| 0–8s | Split view of founder and owner | Show the two identity replies and the same Shared conversation. | “This is Delivery Lens, the first delivery lead for a small startup. Two people are using the same project conversation.” |
 | 8–20s | Founder | Show `DELIVERY START` and the fictional-example choice, then show `DELIVERY FORM`, the reviewed fictional plan, and Create project in this chat. Show named owner questions. | “I give it the outcome, milestone owners, dates, and escalation rules. It starts collecting updates.” |
 | 20–35s | Owner, own account | Send the actual generated JOIN command, then the walkthrough UPDATE text with its current dates. | “Our pilot lead reports missing sandbox access and a threatened date.” |
 | 35–45s | Agent reply | Show the actual risk, source reference, and recovery question. | “It records who said what and asks for a recovery action and date.” |

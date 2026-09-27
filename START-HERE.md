@@ -1,10 +1,10 @@
-# Start here: Delivery Assurance Agent
+# Start here: Delivery Lens
 
 One shared agent acts as a startup's first delivery lead. The founder sets the outcome and makes decisions; a project owner supplies updates and recovery plans. The agent keeps the evidence and current brief. Sparx/Clawd integration is not part of this workflow.
 
 ## 1. Enter and choose your path
 
-After [installation](README.md#installation) and [identity-bearing multiplayer setup](docs/multiplayer.md), open Delivery Assurance Agent in OpenClaw and start a new conversation. Send:
+After [installation](README.md#installation) and [identity-bearing multiplayer setup](docs/multiplayer.md), open Delivery Lens in OpenClaw and start a new conversation. Send:
 
 ```text
 DELIVERY START

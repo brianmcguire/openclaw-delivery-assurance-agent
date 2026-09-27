@@ -1,6 +1,6 @@
 # Submission package
 
-**Delivery Assurance Agent** — a first delivery lead for a startup or small agency.
+**Delivery Lens** — a first delivery lead for a startup or small agency.
 
 The hackathon entry and OpenClaw plugin distribution use the same codebase and release. See [the shared release plan](../docs/release-plan.md); community publication and upstream acceptance have separate checks.
 
@@ -8,7 +8,7 @@ The hackathon entry and OpenClaw plugin distribution use the same codebase and r
 
 ## Agent Index description
 
-Small teams often discover delivery trouble after a promised date has slipped. Delivery Assurance Agent keeps a durable project record in a shared OpenClaw conversation. It asks milestone owners for updates, attributes each reply to its authenticated contributor, detects date threats and blockers, requests a recovery action and date, and escalates decisions to the founder. Original statements and corrections remain traceable. It does not send customer messages or make commitments.
+Small teams often discover delivery trouble after a promised date has slipped. Delivery Lens keeps a durable project record in a shared OpenClaw conversation. It asks milestone owners for updates, attributes each reply to its authenticated contributor, detects date threats and blockers, requests a recovery action and date, and escalates decisions to the founder. Original statements and corrections remain traceable. It does not send customer messages or make commitments.
 
 ## Startup role and real problem
 
@@ -21,6 +21,10 @@ Read [the guided walkthrough](../START-HERE.md). Send `DELIVERY START` in the ru
 ## Install and use
 
 See [installation](../README.md#installation), [multiplayer setup](../docs/multiplayer.md), [architecture](../docs/architecture.md), and [privacy](../docs/privacy.md). A clone plus checkout-local OpenClaw, a configured model, and one trusted team's shared conversation are sufficient. Two distinct people must authenticate and contribute to establish the live multiplayer result.
+
+## Published demo
+
+[Watch Delivery Lens](https://youtu.be/yOk-3M2gTH0): an 88-second edited walkthrough of the completed real two-person pilot, using fictional data and AI-generated Cedar narration. Organizer acceptance of this retrospective format is pending.
 
 ## Submission assets
 
