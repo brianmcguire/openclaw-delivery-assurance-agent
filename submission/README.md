@@ -52,6 +52,10 @@ See [installation](../README.md#installation), [multiplayer setup](../docs/multi
 
 [Watch Delivery Lens](https://youtu.be/yOk-3M2gTH0): an 88-second edited walkthrough of the completed real two-person pilot, using fictional data and AI-generated Cedar narration. The organizer subsequently verified Delivery Lens; their reply did not separately discuss the retrospective video format.
 
+## Published screenshots
+
+The [Agent Index listing](https://aiworthusing.com/agent-index/delivery-assurance-agent) shows three unaltered [OpenClaw pilot captures](screenshots/README.md): the owner's blocker update and recovery question, the dated recovery answer, and the corrected founder brief. They depict real interactions with fictional project data. The captures predate the new Delivery Lens icon installed on September 29.
+
 ## Organizer verification
 
 The entrant provided a September 27 organizer reply stating “Delivery Lens is now Verified.” The organizer said they tested the published BYO setup through its native Codex route and confirmed the project workflow and separate-installer usage reporting. One-click remains off because this release has no cloud image; the organizer described that as by design. This is user-provided organizer correspondence, not an independently fetched public status page.
