@@ -44,6 +44,7 @@ const config = {
     entries: {
       "delivery-assurance-agent": {
         name: "Delivery Lens",
+        identity: { name: "Delivery Lens", emoji: "🔎", avatar: "avatars/delivery-lens.png" },
         workspace,
         skills: ["delivery-assurance"],
       },
